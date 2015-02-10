@@ -3,7 +3,7 @@
 
 #### Quickstart
 ##### To _create_ gene-structure matrix from Allen Brain Atlas
-
+     cd src
      python access-aba.py
 
 This module saves its output to as JSON and TXT. The module writes to the TXT file after each query. It dumps the JSON file after it has finished querying the Allen Brain Atlas's servers. 
