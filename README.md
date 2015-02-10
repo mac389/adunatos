@@ -20,4 +20,3 @@ If main not recognized as executable replace the last line with these two lines:
 - Pandas
 - mygene
 - Awesome_print
-- 
