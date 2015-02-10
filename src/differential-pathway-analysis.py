@@ -36,3 +36,4 @@ roi_selectively_upregulated_genes.drop_duplicates(cols='ID',take_last=True,inpla
 
 roi_selectively_upregulated_genes.to_pickle('../docs/differentially-expressed-genes.pkl')
 roi_selectively_upregulated_genes.to_csv('../docs/differentially-expressed-genes.csv')
+control.to_csv('../docs/everything.csv')
