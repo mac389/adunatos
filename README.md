@@ -13,7 +13,10 @@ This module saves its output to as JSON and TXT. The module writes to the TXT fi
      cd adunatos
      ./main.sh
 
-If main not recognized as executable replace the last line with these two lines:
+This shell script calls four python files to:
+- divide the gene-structure matrix into a control group that contains all brain areas and a regions of interest group (ROI), that contains all brain areas in which we are looking for enrichment. The file _filter_words_ specifies which structures to include in the regions of interest group. 
+
+If your local machine does not recognize _main.sh_ as executable, replace the last line with these two lines:
 
      chmod +x ./main.sh
      ./main.sh
