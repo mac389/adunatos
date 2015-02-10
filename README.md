@@ -1,14 +1,14 @@
 # adunatos
 
 
-##### Quickstart
-1. To create gene-structure matrix from Allen Brain Atlas
+#### Quickstart
+##### To _create_ gene-structure matrix from Allen Brain Atlas
 
      python access-aba.py
 
 This module saves its output to as JSON and TXT. The module writes to the TXT file after each query. It dumps the JSON file after it has finished querying the Allen Brain Atlas's servers. 
 
-To run
+#### To _isolate_ and _compare_ regiosn of interest
 	
      cd adunatos
      ./main.sh
