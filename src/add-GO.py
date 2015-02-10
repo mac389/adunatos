@@ -14,3 +14,4 @@ go_list = [uniprot_to_goa[gene] if gene in uniprot_to_goa else ' '
 
 df['GO'] = go_list
 df.to_pickle('../docs/differentially-expressed-genes-with-uniprot-go.pkl')
+df.to_csv('../docs/differentially-expressed-genes-with-uniprot-go.csv')

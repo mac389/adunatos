@@ -35,3 +35,4 @@ roi_selectively_upregulated_genes = pd.merge(roi_upregulated_genes,control_not_u
 roi_selectively_upregulated_genes.drop_duplicates(cols='ID',take_last=True,inplace=True)
 
 roi_selectively_upregulated_genes.to_pickle('../docs/differentially-expressed-genes.pkl')
+roi_selectively_upregulated_genes.to_csv('../docs/differentially-expressed-genes.csv')
