@@ -8,7 +8,7 @@
 
 This module saves its output to as JSON and TXT. The module writes to the TXT file after each query. It dumps the JSON file after it has finished querying the Allen Brain Atlas's servers. 
 
-#### To _isolate_ and _compare_ regiosn of interest
+##### To _isolate_ and _compare_ regions of interest
 	
      cd adunatos
      ./main.sh
