@@ -15,8 +15,11 @@ def gene_in_pathway(gene_df,pathway_go):
 pathways_of_interest = {'DA':["GO:0001588","GO:0007212"],'GABA':['GO:0007214'],
   'Glu':['GO:0007215'],'Inflammation':["GO:0006954"],
   'Epigenetics':["GO:0040029"]}
-
-df = pd.read_pickle('../docs/differentially-expressed-genes-with-uniprot-go.pkl')
+csv = True
+if csv:
+	df = pd.read_csv('../docs/differentially-expressed-genes-with-uniprot-go.csv')
+else:
+	df = pd.read_pickle('../docs/differentially-expressed-genes-with-uniprot-go.pkl')
 sideviews = {}
 for_frangou = {}
 gene_gos = map(set,df['GO'].values)
