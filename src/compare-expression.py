@@ -16,7 +16,7 @@ pathways_of_interest = {'DA':["GO:0001588","GO:0007212"],'GABA':['GO:0007214'],
   'Glu':['GO:0007215'],'Inflammation':["GO:0006954"],
   'Epigenetics':["GO:0040029"]}
 
-df = pd.read_pickle('differentially-expressed-genes-with-uniprot-go.pkl')
+df = pd.read_pickle('../docs/differentially-expressed-genes-with-uniprot-go.pkl')
 sideviews = {}
 for_frangou = {}
 gene_gos = map(set,df['GO'].values)
@@ -24,7 +24,7 @@ for pathway,go_ids in pathways_of_interest.iteritems():
 	idx = [len(gene_go & set(go_ids))>0 for gene_go in gene_gos]
 	sideviews[pathway] = df[idx]
 	#create views onto df 
-	df[idx][['ID','Level_x','Level_y']].to_csv('differentially-expressed-genes-for-%s.txt'%pathway,
+	df[idx][['ID','Level_x','Level_y']].to_csv('../docs/differentially-expressed-genes-for-%s.txt'%pathway,
 		index=False,header=["Gene", "Expression in ROI","Expression in Brain"])
 
 #Visualization
@@ -57,4 +57,4 @@ plt.legend(frameon=False)
 
 #json.dump(to_plot,open('for-frangou-presentation.json','wb'))
 
-plt.savefig('enriched-genes-by-area-2.tiff')
+plt.savefig('../Images/enriched-genes-by-area-2.tiff')

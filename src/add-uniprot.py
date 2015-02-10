@@ -4,7 +4,7 @@ import pandas as pd
 
 from awesome_print import ap 
 #This module identifies to which pathways the selectively upregulated genes belong
-selectively_upregulated_genes = pd.read_pickle('differentially-expressed-genes.pkl')
+selectively_upregulated_genes = pd.read_pickle('../docs/differentially-expressed-genes.pkl')
 
 mg = mygene.MyGeneInfo()
 
@@ -26,4 +26,4 @@ for i,gene in enumerate(selectively_upregulated_genes['ID'].tolist()):
 	uniprot.append(txt)
 
 selectively_upregulated_genes['uniprot'] = uniprot
-selectively_upregulated_genes.to_pickle('differentially-expressed-genes-with-uniprot.pkl')
+selectively_upregulated_genes.to_pickle('../docs/differentially-expressed-genes-with-uniprot.pkl')

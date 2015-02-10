@@ -18,9 +18,9 @@ def parse_line(line):
 
 
 control = pd.DataFrame(filter(None,[parse_line(line) 
-	for line in open('gene-expression-by-area-snapshot.txt').read().splitlines()]))
+	for line in open('../docs/gene-expression-by-area-snapshot.txt').read().splitlines()]))
 
-roi = pd.read_csv('gene-expression-by-area-filtered.txt',sep='|',
+roi = pd.read_csv('../docs/gene-expression-by-area-filtered.txt',sep='|',
 	names=['Structure','ID','Level'])
 
 control['zscore'] = np.absolute((control['Level'] - control['Level'].mean())/control['Level'].std(ddof=0))
@@ -34,4 +34,4 @@ control_not_upregulated_genes = control[control['zscore']<CUTOFF]
 roi_selectively_upregulated_genes = pd.merge(roi_upregulated_genes,control_not_upregulated_genes,on='ID')
 roi_selectively_upregulated_genes.drop_duplicates(cols='ID',take_last=True,inplace=True)
 
-roi_selectively_upregulated_genes.to_pickle('differentially-expressed-genes.pkl')
+roi_selectively_upregulated_genes.to_pickle('../docs/differentially-expressed-genes.pkl')

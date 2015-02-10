@@ -1,5 +1,5 @@
 cd src
-python differential-pathway-analysis
+python differential-pathway-analysis.py
 echo 'Extracted regions of interest by z-score, deduplicated'
 python add-uniprot.py
 echo 'Found Uniprot alias for genes'
