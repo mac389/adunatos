@@ -1,0 +1,72 @@
+-----------
+RPL36A
+hsa03010  Ribosome
+-----------
+-----------
+RPS6KA2
+{u'hsa04114': u'Oocyte meiosis', u'hsa04720': u'Long-term potentiation', u'hsa04722': u'Neurotrophin signaling pathway', u'hsa04914': u'Progesterone-mediated oocyte maturation', u'hsa04010': u' MAPK signaling pathway', u'hsa04150': u'mTOR signaling pathway'}
+-----------
+-----------
+ORM2
+None
+-----------
+-----------
+MSN
+{u'hsa05205': u'Proteoglycans in cancer', u'hsa04670': u' Leukocyte transendothelial migration', u'hsa05162': u'Measles', u'hsa04810': u'Regulation of actin cytoskeleton'}
+-----------
+-----------
+RPL21
+hsa03010  Ribosome
+-----------
+-----------
+NAIP
+{u'hsa04621': u' NOD-like receptor signaling pathway', u'hsa05134': u'Legionellosis'}
+-----------
+-----------
+RPL32
+hsa03010  Ribosome
+-----------
+-----------
+NTRK2
+{u'hsa04722': u'Neurotrophin signaling pathway', u'hsa05034': u'Alcoholism', u'hsa04010': u' MAPK signaling pathway'}
+-----------
+-----------
+RPS6KB2
+{u'hsa04350': u'TGF-beta signaling pathway', u'hsa05221': u'Acute myeloid leukemia', u'hsa05205': u'Proteoglycans in cancer', u'hsa04910': u'Insulin signaling pathway', u'hsa05231': u'Choline metabolism in cancer', u'hsa04666': u'Fc gamma R-mediated phagocytosis', u'hsa04066': u'HIF-1 signaling pathway', u'hsa04151': u'PI3K-Akt signaling pathway', u'hsa04152': u'AMPK signaling pathway', u'hsa04150': u'mTOR signaling pathway', u'hsa04012': u' ErbB signaling pathway'}
+-----------
+-----------
+RPS6
+{u'hsa05205': u'Proteoglycans in cancer', u'hsa04910': u'Insulin signaling pathway', u'hsa03010': u' Ribosome', u'hsa04066': u'HIF-1 signaling pathway', u'hsa04150': u'mTOR signaling pathway', u'hsa04151': u'PI3K-Akt signaling pathway'}
+-----------
+-----------
+PRKCSH
+hsa04141  Protein processing in endoplasmic reticulum
+-----------
+-----------
+RPS3A
+hsa03010  Ribosome
+-----------
+-----------
+TTN
+{u'hsa05410': u' Hypertrophic cardiomyopathy (HCM)', u'hsa05414': u'Dilated cardiomyopathy'}
+-----------
+-----------
+PSMB9
+hsa03050  Proteasome
+-----------
+-----------
+RPL13
+hsa03010  Ribosome
+-----------
+-----------
+RPS4X
+hsa03010  Ribosome
+-----------
+-----------
+PBX2
+None
+-----------
+-----------
+COX17
+{u'hsa01100': u'Metabolic pathways', u'hsa00190': u' Oxidative phosphorylation'}
+-----------

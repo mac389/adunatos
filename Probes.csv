@@ -1,0 +1,7 @@
+id,name,gene-id,gene-symbol,gene-name,entrez-id,chromosome,start-position,end-position
+1027477,"A_23_P215956",4583,"MYC","v-myc myelocytomatosis viral oncogene homolog (avian)",4609,"8","n/a","n/a"
+1027480,"A_24_P38363",4583,"MYC","v-myc myelocytomatosis viral oncogene homolog (avian)",4609,"8","n/a","n/a"
+1027478,"A_32_P60687",4583,"MYC","v-myc myelocytomatosis viral oncogene homolog (avian)",4609,"8","n/a","n/a"
+1027479,"CUST_29_PI416408490",4583,"MYC","v-myc myelocytomatosis viral oncogene homolog (avian)",4609,"8","n/a","n/a"
+1044874,"A_23_P201655",26040,"MYCBP","c-myc binding protein",26292,"1","n/a","n/a"
+1044873,"A_23_P86230",26040,"MYCBP","c-myc binding protein",26292,"1","n/a","n/a"

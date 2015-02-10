@@ -1,0 +1,38 @@
+'''
+gene_ids = {}
+for name in gene_names:
+	try:
+		ap(name)
+		gene_ids[name] = mg.query(name,field='entrezgene',species='human')['hits'][0]['entrezgene']	
+	except:
+		pass
+
+json.dump(gene_ids,open('gene_ids','wb'))
+'''
+
+'''
+payload = {"criteria":"model::Sample,rma::criteria,microarray_data_set(products[abbreviation$eq'HumanMA'],specimen(donor[name$eq'H0351.2001'])),structure[acronym$eq'DG'],rma::include,structure,microarray_slides(well_known_files)"}
+
+
+str = "http://api.brain-map.org/api/v2/data/query.xml?criteria="
+'''
+
+
+structures = set([item['structure_name'] for item in data])
+mg = mygene.MyGeneInfo()
+data = list(csv.DictReader(open('protein-coding_gene.txt'),delimiter='\t'))
+
+gene_names = [datum['Approved Symbol'] for datum in data]
+
+probes_for_gene = {}
+
+for gene_id in genes.itervalues():
+	try:
+		ids = [item['id'] for item in requests.get(query_url,params=make_payload(gene_id)).json()['msg']]
+		if len(ids) > 0:
+			probes_for_gene[gene_id] = ids
+	except:
+		pass
+
+json.dump(probes_for_gene,open('genes->probes.json','wb'))
+#ap([item['id'] for item in probes_for_gene_query.json()['msg']])
