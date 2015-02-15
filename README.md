@@ -22,6 +22,16 @@ If your local machine does not recognize _main.sh_ as executable, replace the la
      chmod +x ./main.sh
      ./main.sh
 
+
+##### To generate all data figures from <a href="http://www.nature.com/nature/journal/v489/n7416/full/nature11405.html">Hawrylycz et al. (2012)</a>:
+
+     ./make-all-figures.sh
+
+#### To generate a specific figure:
+
+     cd src
+     python make-figure-x.py
+
 (Built and tested in Python 2.7)
 #####Dependencies
 
