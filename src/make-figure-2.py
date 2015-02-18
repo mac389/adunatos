@@ -1,6 +1,11 @@
 import mygene, json, os
 
 import pandas as pd
+import numpy as np 
+import matplotlib.pyplot as plt 
+from awesome_print import ap 
+
+from mpl_toolkits.mplot3d.axes3d import Axes3D
 
 '''
       This figure is structured as 
@@ -26,6 +31,7 @@ mg = mygene.MyGeneInfo()
 pathways_of_interest = {'DA':["GO:0001588","GO:0007212"],'GABA':['GO:0007214'],
   'Glu':['GO:0007215'],'Inflammation':["GO:0006954"],
   'Epigenetics':["GO:0040029"]}
+
 gene_names = pd.DataFrame(list(set(list(gene_expression_by_area.index))), columns=['ID'])
 
 if not os.path.isfile('gene_id_uniprogt_go_conversion.pkl'):
@@ -55,14 +61,36 @@ if not os.path.isfile('gene_id_uniprogt_go_conversion.pkl'):
 else:
 	gene_names = pd.read_pickle('gene_id_uniprogt_go_conversion.pkl')
 
-genes = gene_names['ID'][[i for i,go_id in enumerate(gene_names['GO']) 
-				if len(set(pathways_of_interest['DA']) & set(go_id))>0]]
+
+da_genes_in_uniprot = pd.read_csv('../docs/human_da_signaling_genes',sep='\t')
+da_genes_in_uniprot.columns = ['id_type','ID','ID2','pf?quoi','name','taxonomy','protein','GO','rien']
+
+da_genes_in_uniprot_ids = list(set(da_genes_in_uniprot['ID'])) #retrieves only 31 unique genes, from 90 I guess otheres are isoforms?
 
 
-print len(genes)
-	
-'''
-heatmap = np.array([[expression[gene][area] 
-		for gene in genes] 
+#print set(gene_names['ID']) & da_genes_in_uniprot_ids
+areas = gene_expression_by_area.columns.values
+
+idxs=list(gene_expression_by_area.index.values)
+#print gene_expression_by_area[areas[1]['A1CF']]
+#print genes
+
+heatmap = np.array([[gene_expression_by_area[area][idxs.index(gene)] if gene in idxs else 0
+		for gene in da_genes_in_uniprot_ids] 
 		for area in areas])
-'''
+
+y = np.array(range(heatmap.shape[0])).astype(int)
+x = np.array(range(heatmap.shape[1])).astype(int)
+X,Y = np.meshgrid(x,y)
+z = np.array([heatmap[y,x] for y in Y for x in X]).astype(float)
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+cax = ax.plot_surface(X,Y,heatmap,rstride=1, cstride=1, cmap=plt.cm.coolwarm, linewidth=0, antialiased=False)
+cbar = plt.colorbar(cax)
+cbar.set_label('Gene Expression Level')
+ax.set_ylabel('Area')
+ax.set_yticklabels([])
+ax.set_xticklabels([])
+ax.set_xlabel('Genes')
+plt.savefig('test-figure-2-3d.png')

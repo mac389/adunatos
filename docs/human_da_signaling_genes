@@ -1,0 +1,90 @@
+UniProtKB	D4S234E	GO_REF:0000002	P	Neuron-specific protein family member 1	D3DVS7_HUMAN|D4S234E|NSG1|hCG_39124	protein	GO:0007212	
+UniProtKB	DRD3	GO_REF:0000019	P	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0060160	
+UniProtKB	ADCY5	GO_REF:0000019	P	Uncharacterized protein	C9JRT8_HUMAN|ADCY5	protein	GO:0007191	
+UniProtKB	ADCY5	GO_REF:0000019	P	Uncharacterized protein	C9JRT8_HUMAN|ADCY5	protein	GO:0007195	
+UniProtKB	OPRM1	GO_REF:0000019	P	Mu-type opioid receptor	OPRM_HUMAN|OPRM1|MOR1	protein	GO:0007191	
+UniProtKB	DRD2	GO_REF:0000002	F	D(2) dopamine receptor	F8VUV1_HUMAN|DRD2	protein	GO:0004952	
+UniProtKB	DRD2	GO_REF:0000002	P	D(2) dopamine receptor	F8VUV1_HUMAN|DRD2	protein	GO:0007195	
+UniProtKB	GNAS	GO_REF:0000019	P	Guanine nucleotide-binding protein G(s) subunit alpha isoforms short	S4R3V9_HUMAN|GNAS	protein	GO:0007191	
+UniProtKB	GNAS	GO_REF:0000019	P	Guanine nucleotide-binding protein G(s) subunit alpha isoforms short	S4R3E3_HUMAN|GNAS	protein	GO:0007191	
+UniProtKB	KLF16	GO_REF:0000019	P	Krueppel-like factor 16	KLF16_HUMAN|KLF16|BTEB4|NSLP2	protein	GO:0007212	
+UniProtKB	DRD2	GO_REF:0000019	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0007195	
+UniProtKB	DRD2	GO_REF:0000019	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0007195	
+UniProtKB	NSG2	GO_REF:0000002	P	Neuron-specific protein family member 2	NSG2_HUMAN|NSG2	protein	GO:0007212	
+UniProtKB	CALY	GO_REF:0000002	P	Neuron-specific vesicular protein calcyon	CALY_HUMAN|CALY|DRD1IP	protein	GO:0007212	
+UniProtKB	DRD2	GO_REF:0000019	F	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0001591	
+UniProtKB	DRD2	GO_REF:0000019	P	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0007195	
+UniProtKB	DRD2	GO_REF:0000019	P	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0007195	
+UniProtKB	DRD2	GO_REF:0000019	F	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0001591	
+UniProtKB	DRD2	GO_REF:0000019	P	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0060160	
+UniProtKB	DRD2	GO_REF:0000019	P	Dopamine D2 receptor	Q6LDH7_HUMAN|DRD2	protein	GO:0060158	
+UniProtKB	GNAL	GO_REF:0000019	P	Guanine nucleotide-binding protein G(olf) subunit alpha	K7EQ80_HUMAN|GNAL	protein	GO:0007191	
+UniProtKB	GNAO1	GO_REF:0000019	P	Guanine nucleotide-binding protein G(o) subunit alpha	H3BQG8_HUMAN|GNAO1	protein	GO:0007212	
+UniProtKB	RGS9	GO_REF:0000019	P	Regulator of G-protein signaling 9	RGS9_HUMAN|RGS9	protein	GO:0007212	
+UniProtKB	GNAO1	GO_REF:0000019	P	Guanine nucleotide-binding protein G(o) subunit alpha	H3BTM2_HUMAN|GNAO1	protein	GO:0007212	
+UniProtKB	HMP19	GO_REF:0000002	P	Protein HMP19	E5RH73_HUMAN|HMP19	protein	GO:0007212	
+UniProtKB	HMP19	GO_REF:0000002	P	Protein HMP19	E5RGE8_HUMAN|HMP19	protein	GO:0007212	
+UniProtKB	HMP19	GO_REF:0000002	P	Protein HMP19	E5RHS6_HUMAN|HMP19	protein	GO:0007212	
+UniProtKB	ADCY5	GO_REF:0000019	P	Adenylate cyclase type 5	ADCY5_HUMAN|ADCY5	protein	GO:0007195	
+UniProtKB	ADCY5	GO_REF:0000019	P	Adenylate cyclase type 5	ADCY5_HUMAN|ADCY5	protein	GO:0007191	
+UniProtKB	ADCY5	GO_REF:0000019	P	Adenylate cyclase type 5	C9JQ38_HUMAN|ADCY5	protein	GO:0007195	
+UniProtKB	ADCY5	GO_REF:0000019	P	Adenylate cyclase type 5	C9JQ38_HUMAN|ADCY5	protein	GO:0007191	
+UniProtKB	DRD3	GO_REF:0000002	F	D(3) dopamine receptor	E9PCM4_HUMAN|DRD3	protein	GO:0004952	
+UniProtKB	DRD3	GO_REF:0000002	P	D(3) dopamine receptor	E9PCM4_HUMAN|DRD3	protein	GO:0007195	
+UniProtKB	HMP19	GO_REF:0000002	P	HMP19 protein, isoform CRA_c	G3XAM5_HUMAN|HMP19|hCG_41130	protein	GO:0007212	
+UniProtKB	SLC9A3R1	GO_REF:0000019	P	Na(+)/H(+) exchange regulatory cofactor NHE-RF1	NHRF1_HUMAN|SLC9A3R1|NHERF|NHERF1	protein	GO:0007191	
+UniProtKB	SLC9A3R1	GO_REF:0000019	P	Na(+)/H(+) exchange regulatory cofactor NHE-RF1	NHRF1_HUMAN|SLC9A3R1|NHERF|NHERF1	protein	GO:0060158	
+UniProtKB	GNAL	GO_REF:0000019	P	Guanine nucleotide-binding protein G(olf) subunit alpha	K7EPE2_HUMAN|GNAL	protein	GO:0007191	
+UniProtKB	HTT	GO_REF:0000019	P	Huntingtin	HD_HUMAN|HTT|HD|IT15	protein	GO:0007212	
+UniProtKB	NSG1	GO_REF:0000002	P	Neuron-specific protein family member 1	NSG1_HUMAN|NSG1|D4S234	protein	GO:0007212	
+UniProtKB	GNA11	GO_REF:0000033	P	Guanine nucleotide-binding protein subunit alpha-11	GNA11_HUMAN|GNA11|GA11	protein	GO:0060158	
+UniProtKB	DRD5	PMID:1826762	P	D(1B) dopamine receptor	DRD5_HUMAN|DRD5|DRD1B|DRD1L2	protein	GO:0007191	
+UniProtKB	DRD5	PMID:9457173	F	D(1B) dopamine receptor	DRD5_HUMAN|DRD5|DRD1B|DRD1L2	protein	GO:0001588	
+UniProtKB	DRD5	PMID:18403039	P	D(1B) dopamine receptor	DRD5_HUMAN|DRD5|DRD1B|DRD1L2	protein	GO:0007191	
+UniProtKB	DRD5	PMID:9457173	P	D(1B) dopamine receptor	DRD5_HUMAN|DRD5|DRD1B|DRD1L2	protein	GO:0060158	
+UniProtKB	DRD5	PMID:1826762	F	D(1B) dopamine receptor	DRD5_HUMAN|DRD5|DRD1B|DRD1L2	protein	GO:0004952	
+UniProtKB	DRD4	GO_REF:0000024	F	D(4) dopamine receptor	DRD4_HUMAN|DRD4	protein	GO:0001591	
+UniProtKB	DRD4	PMID:1840645	F	D(4) dopamine receptor	DRD4_HUMAN|DRD4	protein	GO:0001591	
+UniProtKB	DRD4	PMID:7512953	P	D(4) dopamine receptor	DRD4_HUMAN|DRD4	protein	GO:0007195	
+UniProtKB	DRD4	PMID:1840645	P	D(4) dopamine receptor	DRD4_HUMAN|DRD4	protein	GO:0007212	
+UniProtKB	DRD4	PMID:8413587	F	D(4) dopamine receptor	DRD4_HUMAN|DRD4	protein	GO:0004952	
+UniProtKB	DRD1	PMID:2144334	F	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0001588	
+UniProtKB	DRD1	PMID:1282671	P	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0060158	
+UniProtKB	DRD1	PMID:2168520	P	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0007191	
+UniProtKB	DRD1	PMID:2144334	P	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0007191	
+UniProtKB	DRD1	PMID:1831904	F	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0004952	
+UniProtKB	DRD1	PMID:2168520	F	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0001588	
+UniProtKB	DRD1	PMID:17194762	P	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0060158	
+UniProtKB	DRD1	PMID:7838121	F	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0001588	
+UniProtKB	DRD1	PMID:1282671	F	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0001588	
+UniProtKB	DRD1	PMID:18403039	P	D(1A) dopamine receptor	DRD1_HUMAN|DRD1	protein	GO:0007191	
+UniProtKB	LRRK2	GO_REF:0000024	P	Leucine-rich repeat serine/threonine-protein kinase 2	LRRK2_HUMAN|LRRK2|PARK8	protein	GO:0060159	
+UniProtKB	LRRK2	PMID:20659558	P	Leucine-rich repeat serine/threonine-protein kinase 2	LRRK2_HUMAN|LRRK2|PARK8	protein	GO:0060161	
+UniProtKB	ADCY6	PMID:18403039	P	Adenylate cyclase type 6	ADCY6_HUMAN|ADCY6|KIAA0422	protein	GO:0007212	
+UniProtKB	GNAS	GO_REF:0000024	P	Guanine nucleotide-binding protein G(s) subunit alpha isoforms short	GNAS2_HUMAN|GNAS|GNAS1|GSP	protein	GO:0007191	
+UniProtKB	GNB1	GO_REF:0000024	P	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1	GBB1_HUMAN|GNB1	protein	GO:0007191	
+UniProtKB	GNAO1	GO_REF:0000033	P	Guanine nucleotide-binding protein G(o) subunit alpha	GNAO_HUMAN|GNAO1	protein	GO:0007212	
+UniProtKB	CAV2	PMID:15569306	P	Caveolin-2	CAV2_HUMAN|CAV2	protein	GO:0060161	
+UniProtKB	GNA14	GO_REF:0000033	P	Guanine nucleotide-binding protein subunit alpha-14	GNA14_HUMAN|GNA14	protein	GO:0060158	
+UniProtKB	GNAQ	GO_REF:0000033	P	Guanine nucleotide-binding protein G(q) subunit alpha	GNAQ_HUMAN|GNAQ|GAQ	protein	GO:0060158	
+UniProtKB	GNAL	GO_REF:0000033	P	Guanine nucleotide-binding protein G(olf) subunit alpha	GNAL_HUMAN|GNAL	protein	GO:0007191	
+UniProtKB	DRD2	GO_REF:0000024	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0060160	
+UniProtKB	DRD2	PMID:2531656	F	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0001591	UniProtKB:P14416-2
+UniProtKB	DRD2	PMID:1331329	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0007195	UniProtKB:P14416-2
+UniProtKB	DRD2	PMID:17194762	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0060158	
+UniProtKB	DRD2	PMID:8301582	F	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0001591	
+UniProtKB	DRD2	PMID:2531656	P	D(2) dopamine receptor	DRD2_HUMAN|DRD2	protein	GO:0007195	UniProtKB:P14416-1
+UniProtKB	GNAS	GO_REF:0000033	P	Guanine nucleotide-binding protein G(s) subunit alpha isoforms XLas	GNAS1_HUMAN|GNAS|GNAS1	protein	GO:0007191	
+UniProtKB	FLNA	PMID:10692483	P	Filamin-A	FLNA_HUMAN|FLNA|FLN|FLN1	protein	GO:0007195	
+UniProtKB	PALM	PMID:16386234	P	Paralemmin-1	PALM_HUMAN|PALM|KIAA0270	protein	GO:0060160	
+UniProtKB	GNA15	GO_REF:0000033	P	Guanine nucleotide-binding protein subunit alpha-15	GNA15_HUMAN|GNA15|GNA16	protein	GO:0060158	
+UniProtKB	DRD3	PMID:7907363	P	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0007195	
+UniProtKB	DRD3	PMID:18424554	P	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0007195	
+UniProtKB	DRD3	GO_REF:0000024	P	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0060161	
+UniProtKB	DRD3	PMID:8301582	F	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0001591	
+UniProtKB	DRD3	PMID:18424554	P	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0007191	
+UniProtKB	DRD3	GO_REF:0000024	F	D(3) dopamine receptor	DRD3_HUMAN|DRD3	protein	GO:0001591	
+UniProtKB	dopamine D4 receptor	PMID:8746407	F	Dopamine D4 receptor	Q99586_HUMAN|dopamine D4 receptor	protein	GO:0004952	
+UniProtKB	dopamine D4 receptor	PMID:8746407	P	Dopamine D4 receptor	Q99586_HUMAN|dopamine D4 receptor	protein	GO:0007212	
+UniProtKB	GNG2	GO_REF:0000024	P	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2	GBG2_HUMAN|GNG2	protein	GO:0007191	
+UniProtKB	DTNBP1	GO_REF:0000024	P	Dysbindin	DTBP1_HUMAN|DTNBP1|BLOC1S8|My031	protein	GO:0060159	
