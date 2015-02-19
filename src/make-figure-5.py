@@ -57,15 +57,28 @@ Genes |
 def after(path,parent):
 	return [structure for structure in path if path.index(structure) > path.index(parent)]
 
+def before(path,parent):
+	return [structure for structure in path if path.index(structure) < path.index(parent)]
+
+
 def allChildrenOfParent(parent,ontology):
 	paths = list(set(itertools.chain.from_iterable([after(path.split('_'),parent) 
 				for path in ontology if "%s_"%parent in path])))
 	return paths
 
+
+def ancestor(currentNode,ontology,levels=1): #Count of levels of ancestors to return
+ 	paths = [path for path in ontology if "%s_"%currentNode in path]
+ 	return list(set(itertools.chain.from_iterable([[structure for structure in path.split('_')  
+ 				if path.split('_').index(currentNode) > path.split('_').index(structure)] for path in paths])))
+ 	#Flattening won't work structure paths of very different lengths, I don't think . 
+ 	
+print ancestor('frontal lobe',flattened_structural_ontology)
+'''
 areas = allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
 areas = [area for area in areas if area in df.columns.values]
 
-data = df[areas]
+data = df[areas].tail(50)
 
 col_labels = data.columns.values
 row_labels = data.index.values
@@ -150,11 +163,6 @@ tickL = cb.ax.yaxis.get_ticklabels()
 for t in tickL:
     t.set_fontsize(t.get_fontsize() - 3)
 
-'''
-fig = plt.figure()
-ax = fig.add_subplot(111)
-ax.imshow(df_colrowclust, interpolation='nearest',aspect='auto',cmap=cmap) 
-clean_axis(ax)
-'''
 heatmapGS.tight_layout(fig,h_pad=0.1,w_pad=0.5)
-plt.savefig('fig-5.tiff')
+plt.savefig('fig-5-small.tiff')
+'''
