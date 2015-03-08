@@ -24,9 +24,8 @@ Gene  |
  2. Find expression by area
 '''
 
-
-gene_expression_by_area = pd.read_json('../gene-expression-by-area2.json').dropna(axis=1)
-uniprot_to_goa = json.load(open('../docs/uniprot->goa_deduplicated.json','rb'))
+gene_expression_by_area = pd.read_json('./docs/gene-expression-by-area2.json').dropna(axis=1)
+uniprot_to_goa = json.load(open('./docs/uniprot->goa_deduplicated.json','rb'))
 mg = mygene.MyGeneInfo()
 pathways_of_interest = {'DA':["GO:0001588","GO:0007212"],'GABA':['GO:0007214'],
   'Glu':['GO:0007215'],'Inflammation':["GO:0006954"],
@@ -34,7 +33,7 @@ pathways_of_interest = {'DA':["GO:0001588","GO:0007212"],'GABA':['GO:0007214'],
 
 gene_names = pd.DataFrame(list(set(list(gene_expression_by_area.index))), columns=['ID'])
 
-if not os.path.isfile('gene_id_uniprogt_go_conversion.pkl'):
+if not os.path.isfile('./docs/gene_id_uniprogt_go_conversion.pkl'):
 	kwargs = {'species':'human','fields':'uniprot','scopes':'symbol'}
 	uniprot = []
 	for i,gene in enumerate(gene_names['ID'].tolist()):
@@ -56,24 +55,17 @@ if not os.path.isfile('gene_id_uniprogt_go_conversion.pkl'):
 				for gene in gene_names['uniprot'].tolist()]
 
 	gene_names['GO'] = go_list
-
-	gene_names.to_pickle('gene_id_uniprogt_go_conversion.pkl')
+	gene_names.to_pickle('./docs/gene_id_uniprogt_go_conversion.pkl')
 else:
-	gene_names = pd.read_pickle('gene_id_uniprogt_go_conversion.pkl')
+	gene_names = pd.read_pickle('./docs/gene_id_uniprogt_go_conversion.pkl')
 
 
-da_genes_in_uniprot = pd.read_csv('../docs/human_da_signaling_genes',sep='\t')
+da_genes_in_uniprot = pd.read_csv('./docs/human_da_signaling_genes',sep='\t')
 da_genes_in_uniprot.columns = ['id_type','ID','ID2','pf?quoi','name','taxonomy','protein','GO','rien']
 
 da_genes_in_uniprot_ids = list(set(da_genes_in_uniprot['ID'])) #retrieves only 31 unique genes, from 90 I guess otheres are isoforms?
-
-
-#print set(gene_names['ID']) & da_genes_in_uniprot_ids
 areas = gene_expression_by_area.columns.values
-
 idxs=list(gene_expression_by_area.index.values)
-#print gene_expression_by_area[areas[1]['A1CF']]
-#print genes
 
 heatmap = np.array([[gene_expression_by_area[area][idxs.index(gene)] if gene in idxs else 0
 		for gene in da_genes_in_uniprot_ids] 
@@ -93,4 +85,4 @@ ax.set_ylabel('Area')
 ax.set_yticklabels([])
 ax.set_xticklabels([])
 ax.set_xlabel('Genes')
-plt.savefig('test-figure-2-3d.png')
+plt.savefig('./Images/test-figure-2-3d.tiff')

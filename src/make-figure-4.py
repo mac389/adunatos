@@ -1,11 +1,13 @@
 import json, collections
 import pandas as pd
 import matplotlib.pyplot as plt 
+import numpy as np 
 
 from copy import copy
-from scipy.stats import ranksums
+from scipy.stats import zscore
 from awesome_print import ap 
 from jsonpath_rw import jsonpath, parse, Descendants
+from scipy.stats.distributions import norm
 
 plt.xkcd()
 
@@ -24,15 +26,15 @@ def traverse(list_of_dictionaries,_prefix=""):
 			_items.append(_prefix)
 	return _items
 
-df = pd.read_json('../gene-expression-by-area2.json').dropna(axis=1)
-structural_ontolgy = json.load(open('brain-structure-ontology.json','rb'))['msg'][0]
+df = pd.read_json('./docs/gene-expression-by-area2.json').dropna(axis=1)
+structural_ontolgy = json.load(open('./docs/brain-structure-ontology.json','rb'))['msg'][0]
 #Group rows by region
 #labels = {'Frontal Lobe':4009,'Insula':4268,'Limbic Lobe':4219,'Occipital Lobe':4180,
 #			'Parietal Lobe':4084,'Temporal Lobe':4132} #White matter ventricles
 
 labels = map(lambda s: '_%s_'%s,['frontal lobe','insula','limbic lobe','occipital lobe','parietal lobe','temporal lobe'])
 
-flattened_structural_ontology = open('flattened_structural_ontology','rb').read().splitlines()
+flattened_structural_ontology = open('./docs/flattened_structural_ontology','rb').read().splitlines()
 
 column_names = list(df.columns.values)
 new_column_names = [name for name in column_names  for label in labels 
@@ -41,7 +43,8 @@ new_column_names = [name for name in column_names  for label in labels
 new_column_names = list(collections.OrderedDict.fromkeys(new_column_names))
 
 df = df[new_column_names]
-
+df = (df - df.mean())/df.std() #Expressions are in log value, so subtraction is scaling
+#print df 
 '''
 		Figure 4 structured as 
 
@@ -58,15 +61,16 @@ Area    |    x_{ij}  represents the *number* of common genes enriched in one str
 
 '''
 
-
 def compare(one,two):
+
 	column_one_header,column_one_data = one
 	column_two_header,column_two_data = two
 
-	#ap('%s -vs- %s'%(column_one_header,column_two_header))
-
+	zscores =  zscore(column_one_data-column_two_data)
 	#Ranksums gives z and then p-value
-	return ranksums(column_one_data,column_two_data)[0]
+	threshold = -norm.ppf(0.025/zscores.shape[0])
+	return sum(zscores>threshold)
+	
 
 heatmap = [[compare(column_one,column_two)
 			for column_one in df.iteritems()]
@@ -76,5 +80,6 @@ fig = plt.figure()
 ax = fig.add_subplot(111)
 cax = ax.imshow(heatmap,cmap=plt.cm.jet,interpolation='nearest',aspect='auto')
 cbar = plt.colorbar(cax)
-cbar.set_label('Z-score; Differential Gene Expression')
-plt.savefig('../images/for-nature-differential-gene-expression-ordered-jet.png')
+cbar.set_label('No. of differentially expressed genes')
+plt.savefig('./images/deg.png')
+
