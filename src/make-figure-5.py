@@ -45,8 +45,8 @@ gene_colorbar = brewer2mpl.get_map('Set3','qualitative',10)
 lcolor = len(structure_colorbar.mpl_colors)
 lgcolor = len(gene_colorbar.mpl_colors)
 norm = mpl.colors.Normalize(vmin=5, vmax=10)
-flattened_structural_ontology = open('flattened_structural_ontology','rb').read().splitlines()
-df = pd.read_json('../gene-expression-by-area2.json').dropna(axis=1)
+flattened_structural_ontology = open('../docs/flattened_structural_ontology','rb').read().splitlines()
+df = pd.read_json('../docs/gene-expression-by-area2.json').dropna(axis=1)
 
 '''
      Data formatted as 
@@ -59,24 +59,42 @@ Genes |
 
 '''
 
+def uniqfy(seq, idfun=None): 
+   # order preserving
+   if idfun is None:
+       def idfun(x): return x
+   seen = {}
+   result = []
+   for item in seq:
+       marker = idfun(item)
+       # in old Python versions:
+       # if seen.has_key(marker)
+       # but in new ones:
+       if marker in seen: continue
+       seen[marker] = 1
+       result.append(item)
+   return result
+
 def after(path,parent):
 	return [structure for structure in path if path.index(structure) > path.index(parent)]
 
 def before(path,parent):
 	return [structure for structure in path if path.index(structure) < path.index(parent)]
 
-
 def allChildrenOfParent(parent,ontology):
 	paths = list(set(itertools.chain.from_iterable([after(path.split('_'),parent) 
 				for path in ontology if "%s_"%parent in path])))
 	return paths
 
+def ancestors(currentNode,ontology):
+  ans = uniqfy(itertools.chain.from_iterable([path.split('_') for path in ontology if '%s_'%currentNode in path]))
+  return ans if ans != [] else currentNode
 
 def ancestor(currentNode,ontology,levels=1): #Count of levels of ancestors to return
- 	paths = [path for path in ontology if "%s_"%currentNode in path]
- 	return list(set(itertools.chain.from_iterable([[structure for structure in path.split('_')  
- 				if path.split('_').index(currentNode) > path.split('_').index(structure)] for path in paths])))[-levels:]
- 	#Flattening won't work structure paths of very different lengths, I don't think . 
+  paths = [path for path in ontology if "%s_"%currentNode in path] 
+  return list(set(itertools.chain.from_iterable([[structure for structure in path.split('_')  
+  			if path.split('_').index(currentNode) > path.split('_').index(structure)] for path in paths])))[-levels:]
+  #Flattening won't work structure paths of very different lengths, I don't think . 
 
 areas = allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
 areas = [area for area in areas if area in df.columns.values]
@@ -101,7 +119,6 @@ col_clusters = linkage(col_dists, method='complete')
  # makes dendrogram black)
 # reorder columns and rows with respect to the clustering
 
-##$%^&*()
 fig = plt.figure(figsize=(12,8))
 heatmapGS = gridspec.GridSpec(2,2,wspace=0.0,hspace=0.0,width_ratios=[0.25,1],height_ratios=[0.25,1])
 
@@ -151,6 +168,7 @@ clean_axis(heatmapAX)
 ## row labels ##
 heatmapAX.set_yticks(np.arange(df_colrowclust.shape[0]))
 heatmapAX.yaxis.set_ticks_position('right')
+ap([ancestors(val,flattened_structural_ontology) for val in df_colrowclust.columns.values])
 heatmapAX.set_yticklabels(df_colrowclust.index.values, fontsize=8)
 
 ## col labels ##

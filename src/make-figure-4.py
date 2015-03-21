@@ -8,8 +8,8 @@ from scipy.stats import zscore
 from awesome_print import ap 
 from jsonpath_rw import jsonpath, parse, Descendants
 from scipy.stats.distributions import norm
-
-plt.xkcd()
+from time import time
+#plt.xkcd()
 
 def before(x,y,full_string):
 	return full_string.find(x) < full_string.find(y)
@@ -26,6 +26,27 @@ def traverse(list_of_dictionaries,_prefix=""):
 			_items.append(_prefix)
 	return _items
 
+def get_lineage(child,flattened_ontology):
+	for lineage in flattened_ontology:
+		print lineage
+
+def common_ancestor(children,flattened_ontology):
+	ap(children)
+	lineages = [lineage.split('_') 
+					for lineage in flattened_ontology 
+					for child in children 
+					if child in lineage]
+	ap(lineages)
+	'''				
+	for child in children:
+		for lineage in flattened_ontology:
+			if child in lineage:
+				ap('----------')
+				ap(child)
+				ap(lineage.split('_'))
+				ap(lineage.split('_').index(child))
+				ap('----------')
+	'''
 df = pd.read_json('./docs/gene-expression-by-area2.json').dropna(axis=1)
 structural_ontolgy = json.load(open('./docs/brain-structure-ontology.json','rb'))['msg'][0]
 #Group rows by region
@@ -42,9 +63,11 @@ new_column_names = [name for name in column_names  for label in labels
 
 new_column_names = list(collections.OrderedDict.fromkeys(new_column_names))
 
+common_ancestor(new_column_names[:2],list(set(flattened_structural_ontology)))
+
 df = df[new_column_names]
 df = (df - df.mean())/df.std() #Expressions are in log value, so subtraction is scaling
-#print df 
+
 '''
 		Figure 4 structured as 
 
@@ -62,24 +85,16 @@ Area    |    x_{ij}  represents the *number* of common genes enriched in one str
 '''
 
 def compare(one,two):
+	zscores = zscore(one-two)
+	threshold = -norm.ppf(0.025/zscores.shape[0]) #I don't understand why there is a negative here
+	return sum(np.absolute(zscores)>threshold)
 
-	column_one_header,column_one_data = one
-	column_two_header,column_two_data = two
-
-	zscores =  zscore(column_one_data-column_two_data)
-	#Ranksums gives z and then p-value
-	threshold = -norm.ppf(0.025/zscores.shape[0])
-	return sum(zscores>threshold)
-	
-
-heatmap = [[compare(column_one,column_two)
-			for column_one in df.iteritems()]
-			for column_two in df.iteritems()]
+differ = np.reshape([compare(df[col2],df[col]) for col2 in df for col in df], (df.shape[1],df.shape[1]))
+differ = pd.DataFrame(differ, columns=df.columns.values,index=df.columns.values)
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-cax = ax.imshow(heatmap,cmap=plt.cm.jet,interpolation='nearest',aspect='auto')
+cax = ax.imshow(differ,cmap=plt.cm.jet,interpolation='nearest',aspect='auto')
 cbar = plt.colorbar(cax)
 cbar.set_label('No. of differentially expressed genes')
-plt.savefig('./images/deg.png')
-
+plt.savefig('./images/deg.tiff')
