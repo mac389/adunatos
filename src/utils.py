@@ -98,6 +98,13 @@ def retrieve_annotation(id_list):
  
     return annotations
 
+def format(label):
+    words = label.split()
+    if len(words)>6 or len(label)>50:
+        return ' '.join([' '.join(words[:3]),'\n',' '.join(words[3:])])
+    else:
+        return label
+
 def get_gene_function(gene,levels=None):
     try:
         entrezID = mg.query(gene,scopes='symbol',species='human',fields='entrezgene')['hits'][0]['entrezgene']

@@ -112,11 +112,11 @@ row_cbSE = pd.Series([gene_functions[tech.get_proper_gene_function_key(df_colrow
 row_axi = row_cbAX.imshow([[x] for x in row_cbSE.ix[row_dendrogram['leaves']].values ],
                                     interpolation='nearest',aspect='auto',origin='lower')
 tech.clean_axis(row_cbAX)
-row_colorbar_cbar = mpl.colorbar.ColorbarBase(fig.add_axes([0.16, 0.01, 0.03, 0.15]), 
+row_colorbar_cbar = mpl.colorbar.ColorbarBase(fig.add_axes([0.02, 0.01, 0.03, 0.15]), 
 							cmap=plt.cm.Set3, orientation='vertical', norm=norm)
-row_colorbar_cbar.set_label('Functions', labelpad=-100)
+row_colorbar_cbar.set_label('Functions', labelpad=-325)
 row_colorbar_cbar.outline.set_visible(False)
-
+row_colorbar_cbar.ax.set_aspect(3)
 tech.clean_axis(col_denAX)
 
 labels = tech.array_from_lists([tech.ancestors(val,flattened_structural_ontology) 
@@ -145,11 +145,12 @@ col_cbSE = pd.Series([structures[tech.get_proper_key(df_colrowclust.columns.valu
 col_axi = col_cbAX.imshow([list(col_cbSE.ix[col_dendr['leaves']])],
         interpolation='nearest',aspect='auto',origin='lower')
 tech.clean_axis(col_cbAX)
-col_colorbar_cbar = mpl.colorbar.ColorbarBase(fig.add_axes([0.04, 0.01, 0.03, 0.15]), 
+col_colorbar_cbar = mpl.colorbar.ColorbarBase(fig.add_axes([0.88, 0.01, 0.03, 0.15]), 
 							cmap=plt.cm.Set1, orientation='vertical', norm=norm)
-col_colorbar_cbar.set_label('Structures',labelpad=-150)
+col_colorbar_cbar.set_label('Structures',labelpad=-140)
 col_colorbar_cbar.ax.set_yticklabels([item[0].capitalize() for item in structures.items()]) 
 col_colorbar_cbar.outline.set_visible(False)
+col_colorbar_cbar.ax.set_aspect(3)
 
 ### heatmap ###
 heatmapAX = fig.add_subplot(heatmapGS[1,1])
@@ -166,14 +167,18 @@ ylabels,yticks = zip(*tech.word_change_boundaries(ylabels,cutoff=cutoff).items()
 heatmapAX.set_yticks(yticks)
 heatmapAX.set_yticklabels(ylabels, fontsize=8)
 for linetick in lineticks:
-  heatmapAX.axhline(linetick-1,color='k',clip_on=False, xmax=len(df_colrowclust.columns))
+  heatmapAX.axhline(linetick-1,color='w',clip_on=False, xmax=len(df_colrowclust.columns))
+  heatmapAX.axhline(linetick-1,color='k',clip_on=False, xmin=len(df_colrowclust.columns))
+  
 row_colorbar_cbar.ax.set_yticklabels([item[0].capitalize() for item in gene_functions.items()])
 
 ## col labels ##
 heatmapAX.set_xticks(np.arange(df_colrowclust.shape[1]))
 xlabelsL = heatmapAX.set_xticklabels(xlabels, fontsize=10)
 for linetick in xlineticks:
-  heatmapAX.axvline(linetick-1,color='k',clip_on=False, ymin=-len(df_colrowclust.columns))
+  heatmapAX.axvline(linetick,color='k',clip_on=False, ymin=-len(df_colrowclust.columns),ymax=0)
+  heatmapAX.axvline(linetick,color='w', ymin=0,ymax=len(df_colrowclust.index))
+
   
 ## row labels ##
 # rotate labels 90 degrees
@@ -185,13 +190,11 @@ for l in heatmapAX.get_xticklines() + heatmapAX.get_yticklines():
 heatmapAX.xaxis.set_major_locator(FixedLocator(xticklocs))
 heatmapAX.xaxis.set_major_formatter(FixedFormatter(xlabels))
 ### scale colorbar ###
-'''
-  Alter this code. Colorbar is stretched out horizontally. 
-'''
 scale_cbGSSS = gridspec.GridSpecFromSubplotSpec(1,4,subplot_spec=heatmapGS[0,0],wspace=0.0,hspace=0.0)
 scale_cbAX = fig.add_subplot(scale_cbGSSS[0,1]) # colorbar for scale in upper left corner
 cb = fig.colorbar(axi,scale_cbAX) # ould pass the norm explicitly with norm=my_norm
 cb.set_label('Expression')
+cb.ax.set_aspect(3)
 cb.ax.yaxis.set_ticks_position('left') # move ticks to left side of colorbar to avoid problems with tight_layout
 cb.ax.yaxis.set_label_position('left') # move label to left side of colorbar to avoid problems with tight_layout
 cb.outline.set_linewidth(0)
