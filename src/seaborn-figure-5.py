@@ -17,6 +17,15 @@ df = pd.read_json('../docs/gene-expression-by-area2.json').dropna(axis=1)
 genes_functions = json.load(open('../docs/gene-function.json','rb'))
 cutoff = 3
 
+#areas = tech.allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
+areas =open('tmp').read().splitlines()
+ap(open('tmp').read().splitlines())
+areas = [area for area in open('tmp').read().splitlines() if area in df.columns.values]
+#ap(df.columns.values)
+ap(areas)
+data = df[areas].tail(100)
+
+
 #Create color palette for structures
 regions = tech.array_from_lists([tech.ancestors(val,flattened_structural_ontology) for val in df.columns.values])
 ind = np.lexsort(regions,axis=0)
@@ -36,16 +45,12 @@ gene_color_palette = sns.diverging_palette(10, 220, sep=80, n=len(unique_functio
 gene_function_to_color_mapping = dict(zip(unique_functions,gene_color_palette))
 row_colors = pd.Series(functions).map(gene_function_to_color_mapping)
 
-areas = tech.allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
-areas = [area for area in areas if area in df.columns.values]
-data = df[areas].tail(100)
-
 #Determine frequency of each function
 heatmapGS = gridspec.GridSpec(2,2,wspace=0.0,hspace=0.0,width_ratios=[0.5,1.5],height_ratios=[0.25,1])
 
 function_frequences = OrderedDict(sorted(Counter(functions).items(),key=operator.itemgetter(1),reverse=True))
 cg = sns.clustermap(data,method='complete', row_colors=row_colors,yticklabels=False,
-	cbar_kws={'label':'Expression'}, clip_on=False, col_colors = col_colors)
+	cbar_kws={'label':'Expression'}, clip_on=False, col_colors = col_colors, robust=True)
 
 legend_for = cg.ax_col_dendrogram.get_position()
 for label in function_frequences.keys()[:10]:
@@ -60,5 +65,4 @@ for label in structure_frequencies.keys()[:10]:
                             label=tech.format(label), linewidth=0)
 legend_struct = cg.ax_row_dendrogram.get_position()
 cg.ax_row_dendrogram.legend(ncol=1,loc=(legend_for.x0+2.5, legend_for.y0+0.65))
-cg.axes.set_xlabel('Structures')
-cg.savefig('bob.png')
+cg.savefig('SZ_hypo_test.png')

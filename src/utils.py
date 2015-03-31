@@ -212,6 +212,15 @@ def delateralize(structures_ontology):
   ans[-1] = ans[-1].replace(", left","").replace(", right","")
   return ans 
 
+def ale_key(item,ontology,fill_value="Unknown"):
+    k = uniqfy(flatten(list(k for k,_ in itertools.groupby([path.split('_') 
+        for path in ontology if item.lower() in path]))))
+    ap(k)
+    if len(list(set(k))) >0:
+        return list(set(k))
+    else:
+        return fill_value
+
 def get_proper_key(item,dictionary,ontology,fill_value='Unknown'):
   possible_clusters = set(dictionary.keys())
   if 'choroid plexus' in item:

@@ -1,0 +1,50 @@
+Area 3:Primary Somatosensory Cortex 
+Area 1:Primary Somatosensory Cortex
+Area 2:Primary Somatosensory Cortex
+Area 4:Primary Motor Cortex
+Area 5:Somatosensory Association Cortex
+Area 6:Supplementary motor area
+Area 7:Somatosensory Association Cortex
+Area 8:Includes Frontal eye fields
+Area 9:Dorsolateral prefrontal cortex
+Area 10:Anterior prefrontal cortex
+Area 11:Orbitofrontal area 
+Area 12:Orbitofrontal area
+Area 13: Insular cortex 
+Area 14:Insular cortex
+Area 15:Anterior Temporal Lobe
+Area 16:Insular cortex
+Area 17:Primary visual cortex (V1)
+Area 18:Secondary visual cortex (V2)
+Area 19:Associative visual cortex (V3,V4,V5)
+Area 20:Inferior temporal gyrus
+Area 21:Middle temporal gyrus
+Area 22:Superior temporal gyrus
+Area 23:Ventral posterior cingulate cortex
+Area 24:Ventral anterior cingulate cortex.
+Area 25:Subgenual area (part of the Ventromedial prefrontal cortex)[4]
+Area 26:Ectosplenial portion of the retrosplenial region of the cerebral cortex
+Area 27:Piriform cortex
+Area 28:Ventral entorhinal cortex
+Area 29:Retrosplenial cingulate cortex
+Area 30:Part of cingulate cortex
+Area 31:Dorsal Posterior cingulate cortex
+Area 32:Dorsal anterior cingulate cortex
+Area 33:Part of anterior cingulate cortex
+Area 34:Dorsal entorhinal cortex (on the Parahippocampal gyrus)
+Area 35:Perirhinal cortex (in the rhinal sulcus)
+Area 36:Ectorhinal area, now part of the perirhinal cortex (in the rhinal sulcus)
+Area 37:Fusiform gyrus
+Area 38:Temporopolar area (most rostral part of the superior and middle temporal gyri)
+Area 39:Angular gyrus
+Area 40:Supramarginal gyrus 
+Area 41:Auditory cortex
+Area 42:Auditory cortex
+Area 43:Primary gustatory cortex
+Area 44:Pars opercularis
+Area 45:Pars triangularis
+Area 46:Dorsolateral prefrontal cortex
+Area 47:Pars orbitalis, part of the inferior frontal gyrus
+Area 48:Retrosubicular area (a small part of the medial surface of the temporal lobe)
+Area 49:Parasubicular area in a rodent
+Area 52:Parainsular area (at the junction of the temporal lobe and the insula)
