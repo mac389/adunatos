@@ -17,14 +17,15 @@ df = pd.read_json('../docs/gene-expression-by-area2.json').dropna(axis=1)
 genes_functions = json.load(open('../docs/gene-function.json','rb'))
 cutoff = 3
 
+#Direct input and output
+
 #areas = tech.allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
 areas =open('tmp').read().splitlines()
 ap(open('tmp').read().splitlines())
 areas = [area for area in open('tmp').read().splitlines() if area in df.columns.values]
 #ap(df.columns.values)
 ap(areas)
-data = df[areas].tail(100)
-
+data = df[areas]
 
 #Create color palette for structures
 regions = tech.array_from_lists([tech.ancestors(val,flattened_structural_ontology) for val in df.columns.values])
@@ -50,7 +51,8 @@ heatmapGS = gridspec.GridSpec(2,2,wspace=0.0,hspace=0.0,width_ratios=[0.5,1.5],h
 
 function_frequences = OrderedDict(sorted(Counter(functions).items(),key=operator.itemgetter(1),reverse=True))
 cg = sns.clustermap(data,method='complete', row_colors=row_colors,yticklabels=False,
-	cbar_kws={'label':'Expression'}, clip_on=False, col_colors = col_colors, robust=True)
+	cbar_kws={'label':'Expression'}, clip_on=False, col_colors = col_colors, robust=True,
+	linewidths=0)
 
 legend_for = cg.ax_col_dendrogram.get_position()
 for label in function_frequences.keys()[:10]:

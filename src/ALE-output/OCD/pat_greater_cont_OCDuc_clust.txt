@@ -1,0 +1,67 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 226657
+Mask Size                     = Less Conservative (Larger)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_OCD_upfile_TAL.txt
+Number of foci                = 251
+Number of experiments         = 32
+Total number of subjects      = 1408
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = pat_greater_cont_OCDuc_ALE.nii
+FWHM minimum value            = 8.529755616113304
+FWHM median value             = 8.857805542544007
+FWHM maximum value            = 9.501798304955097
+Minimum ALE score             = 1.62294E-31
+Maximum ALE score             = 0.0215786
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = pat_greater_cont_OCDuc_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 19)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 1096 mm^3
+Chosen min. cluster size      = 400 mm^3
+Thresholded ALE image         = pat_greater_cont_OCDuc_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 688 mm^3 from (-54,0,28) to (-46,10,38) centered at (-49.86,5.43,33.28)
+   Extrema: (Labels are within +/-5mm)
+     0.019796688 at (-50,6,32)	Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+   Labels: (Nearest gray within +/-5mm)
+     272mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+     216mm Left Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 6
+     160mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 9
+     24mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 6
+     8mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 6
+     8mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 8
+
+ #2: 408 mm^3 from (8,16,0) to (16,24,6) centered at (12.76,20.02,2.72)
+   Extrema: (Labels are within +/-5mm)
+     0.020011762 at (14,20,2)	Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+   Labels: (Nearest gray within +/-5mm)
+     352mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     56mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+
+
+Experiment Table:
+[ 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 ]
+[ 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 ]
+
+Contributors to cluster #1
+1 foci from //Via,2013 //Affective 
+1 foci from //Ursu,2003 //Attention 
+2 foci from //Cardoner,2011 //Affective 
+1 foci from //Henseler,2009 //WM 
+
+Contributors to cluster #2
+1 foci from //Mataix-Cols,2004 //Affective 
+1 foci from //Simon,2010 //Affective 
+2 foci from //Baioui,2013 //Affective 

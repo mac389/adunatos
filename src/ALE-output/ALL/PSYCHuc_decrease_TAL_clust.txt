@@ -1,0 +1,625 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 226657
+Mask Size                     = Less Conservative (Larger)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = PSYCH_decrease_TAL.txt
+Number of foci                = 3275
+Number of experiments         = 413
+Total number of subjects      = 16729
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = PSYCHuc_decrease_TAL_ALE.nii
+FWHM minimum value            = 8.468204072838988
+FWHM median value             = 8.908865767289859
+FWHM maximum value            = 10.002568195473065
+Minimum ALE score             = 1.0634275E-11
+Maximum ALE score             = 0.09092033
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = PSYCHuc_decrease_TAL_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 15)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 68760 mm^3
+Chosen min. cluster size      = 888 mm^3
+Thresholded ALE image         = PSYCHuc_decrease_TAL_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 54576 mm^3 from (-42,-42,-24) to (54,50,46) centered at (11.95,5.58,3.99)
+   Extrema: (Labels are within +/-5mm)
+     0.09092033 at (32,26,-2)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     0.08946126 at (22,-4,-14)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     0.08598539 at (16,6,-2)	Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.08371066 at (10,10,12)	Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     0.074366815 at (-28,0,-18)	Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     0.07397371 at (-10,2,-2)	Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Medial Globus Pallidus
+     0.0720174 at (-8,12,4)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     0.071914695 at (8,-6,12)	Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Anterior Nucleus
+     0.07081359 at (46,26,14)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 46
+     0.07009635 at (-24,-6,-16)	Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     0.06758218 at (-8,-10,10)	Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.*
+     0.067445904 at (-16,8,0)	Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.067137755 at (-34,24,-2)	Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     0.06488606 at (42,16,40)	Right Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 9
+     0.060886025 at (14,-36,4)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 30
+     0.060302023 at (40,2,20)	Right Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     0.059430532 at (46,22,4)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 45
+     0.057489995 at (22,-32,-6)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 27
+     0.057081092 at (48,10,26)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+     0.054026995 at (36,6,28)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+     0.051327724 at (-14,-4,20)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     0.048939165 at (30,-24,-12)	Right Cerebrum.Temporal Lobe.Sub-Gyral.Gray Matter.Hippocampus
+     0.047615435 at (36,38,22)	Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 10
+     0.047280554 at (36,38,16)	Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 10
+     0.04673609 at (-18,6,14)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     0.045472763 at (38,38,28)	Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 9
+     0.04536757 at (30,42,14)	Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 10
+     0.044961825 at (-24,0,2)	Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.04267706 at (36,48,-2)	Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 10
+   Labels: (Nearest gray within +/-5mm)
+     4048mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     3080mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     2728mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     2720mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     2232mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     1896mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     1688mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.*
+     1688mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.*
+     1632mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+     1552mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     1552mm Right Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     1496mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     1360mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     1272mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     1272mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     1248mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 46
+     1176mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 45
+     1112mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 9
+     976mm Right Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 9
+     840mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     824mm Right Cerebrum.Sub-lobar.Claustrum.Gray Matter.*
+     808mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.Medial Dorsal Nucleus
+     776mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     776mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Medial Dorsal Nucleus
+     744mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 10
+     688mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 28
+     672mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Medial Globus Pallidus
+     672mm Left Cerebrum.Sub-lobar.Claustrum.Gray Matter.*
+     672mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 13
+     568mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Ventral Lateral Nucleus
+     552mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 35
+     504mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 27
+     504mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Medial Globus Pallidus
+     448mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 46
+     432mm Right Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 6
+     416mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     416mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 36
+     416mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 30
+     408mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     408mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 8
+     368mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.Ventral Anterior Nucleus
+     352mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.Anterior Nucleus
+     336mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.Ventral Lateral Nucleus
+     320mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Anterior Nucleus
+     288mm Right Cerebellum.Anterior Lobe.Culmen.Gray Matter.*
+     248mm Right Cerebrum.Temporal Lobe.Sub-Gyral.Gray Matter.Hippocampus
+     248mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.*
+     248mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Ventral Anterior Nucleus
+     232mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 28
+     232mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Hippocampus
+     232mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Hippocampus
+     232mm Left Cerebrum.Sub-lobar.*.Gray Matter.*
+     216mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     208mm Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 9
+     176mm Right Cerebrum.Sub-lobar.Insula.Gray Matter.*
+     176mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Pulvinar
+     176mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 44
+     168mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 47
+     168mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 6
+     160mm Right Cerebrum.Sub-lobar.*.Gray Matter.Amygdala
+     144mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 28
+     144mm Right Cerebrum.Sub-lobar.*.Gray Matter.*
+     144mm Right Brainstem.Midbrain.*.Gray Matter.Substania Nigra
+     144mm Left Cerebrum.Sub-lobar.*.Gray Matter.Hypothalamus
+     144mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.*
+     128mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 25
+     112mm Left Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 47
+     112mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.*
+     104mm Right Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 47
+     96mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     88mm Right Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     88mm Right Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 47
+     80mm No Gray Matter found
+     80mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 45
+     72mm Right Cerebrum.Sub-lobar.Thalamus.Gray Matter.Ventral Posterior Lateral Nucleus
+     64mm Right Brainstem.Midbrain.*.Gray Matter.Medial Geniculum Body
+     56mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 47
+     56mm Right Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 44
+     48mm Left Cerebrum.Temporal Lobe.Superior Temporal Gyrus.Gray Matter.Brodmann area 38
+     48mm Left Cerebrum.Sub-lobar.*.Gray Matter.Amygdala
+     48mm Right Brainstem.Midbrain.Thalamus.Gray Matter.Medial Geniculum Body
+     40mm Right Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 13
+     40mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.*
+     40mm Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 8
+     32mm Left Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 13
+     32mm Right Brainstem.Midbrain.*.Gray Matter.Subthalamic Nucleus
+     24mm Right Cerebrum.Sub-lobar.*.Gray Matter.Lateral Geniculum Body
+     24mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 11
+     24mm Right Cerebrum.Frontal Lobe.Sub-Gyral.Gray Matter.*
+     24mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.*
+     16mm Left Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     16mm Right Cerebrum.Temporal Lobe.Fusiform Gyrus.Gray Matter.Brodmann area 37
+     16mm Right Cerebrum.Limbic Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     16mm Right Cerebrum.Frontal Lobe.Sub-Gyral.Gray Matter.Brodmann area 47
+     16mm Right Cerebrum.Sub-lobar.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     16mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 25
+     16mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 10
+     16mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.*
+     16mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 13
+     16mm Left Cerebrum.Sub-lobar.Thalamus.Gray Matter.Midline Nucleus
+     16mm Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 10
+     8mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 34
+     8mm Right Cerebrum.Temporal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 13
+     8mm Left Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 25
+     8mm Left Cerebrum.Frontal Lobe.Extra-Nuclear.Gray Matter.Brodmann area 47
+     8mm Left Cerebrum.Frontal Lobe.Sub-Gyral.Gray Matter.Brodmann area 47
+     8mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 45
+     8mm Right Cerebrum.Sub-lobar.Inferior Frontal Gyrus.Gray Matter.Brodmann area 45
+     8mm Right Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 29
+
+ #2: 9136 mm^3 from (-14,10,-4) to (12,42,54) centered at (-2.47,27.94,24.35)
+   Extrema: (Labels are within +/-5mm)
+     0.06395809 at (-2,26,24)	Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     0.06103508 at (-8,36,6)	Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     0.05263092 at (4,18,30)	Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     0.052292835 at (0,16,44)	Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 6
+     0.047107544 at (2,30,40)	Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 8
+     0.04172242 at (-12,18,34)	Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+   Labels: (Nearest gray within +/-5mm)
+     2336mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+     1448mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     1360mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     912mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     336mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+     328mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 9
+     248mm Right Cerebrum.Frontal Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     248mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 8
+     240mm Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 8
+     224mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     224mm Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 8
+     200mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 6
+     184mm Left Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 8
+     168mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 24
+     160mm Left Cerebrum.Frontal Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     136mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.*
+     136mm Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 6
+     112mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 24
+     32mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 10
+     24mm Right Cerebrum.Frontal Lobe.Superior Frontal Gyrus.Gray Matter.Brodmann area 6
+     16mm Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 9
+     16mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 9
+     16mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 32
+     8mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.*
+     8mm No Gray Matter found
+     8mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 33
+     8mm Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 32
+
+ #3: 2344 mm^3 from (-50,-2,12) to (-36,24,46) centered at (-42.42,9.86,29.69)
+   Extrema: (Labels are within +/-5mm)
+     0.06333402 at (-44,14,28)	Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 9
+     0.054607686 at (-40,4,32)	Left Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 9
+     0.04581426 at (-38,4,44)	Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 6
+     0.042496238 at (-44,12,12)	Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     0.04205795 at (-46,16,14)	Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 44
+     0.041939255 at (-44,22,18)	Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 46
+   Labels: (Nearest gray within +/-5mm)
+     632mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 9
+     480mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 9
+     320mm Left Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 6
+     256mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 6
+     240mm Left Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 9
+     224mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 46
+     80mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 45
+     64mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 44
+     32mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     16mm Left Cerebrum.Frontal Lobe.Precentral Gyrus.Gray Matter.Brodmann area 44
+
+ #4: 1816 mm^3 from (-10,-46,18) to (6,-24,32) centered at (-3.68,-35.15,26.99)
+   Extrema: (Labels are within +/-5mm)
+     0.05950758 at (-4,-28,28)	Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 23
+     0.053965487 at (2,-38,24)	Right Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 23
+     0.050699245 at (-6,-40,26)	Left Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 23
+   Labels: (Nearest gray within +/-5mm)
+     616mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 31
+     488mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 23
+     400mm Left Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 23
+     104mm Right Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 23
+     88mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 31
+     56mm Left Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 30
+     40mm Left Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 29
+     16mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 23
+     8mm Right Cerebrum.Limbic Lobe.Posterior Cingulate.Gray Matter.Brodmann area 29
+
+ #5: 888 mm^3 from (30,-62,38) to (38,-46,46) centered at (34.36,-53.7,42.27)
+   Extrema: (Labels are within +/-5mm)
+     0.05940087 at (34,-58,44)	Right Cerebrum.Parietal Lobe.Inferior Parietal Lobule.Gray Matter.Brodmann area 7
+     0.057643935 at (34,-50,42)	Right Cerebrum.Parietal Lobe.Inferior Parietal Lobule.Gray Matter.Brodmann area 40
+   Labels: (Nearest gray within +/-5mm)
+     512mm Right Cerebrum.Parietal Lobe.Inferior Parietal Lobule.Gray Matter.Brodmann area 40
+     176mm Right Cerebrum.Parietal Lobe.Superior Parietal Lobule.Gray Matter.Brodmann area 7
+     152mm Right Cerebrum.Parietal Lobe.Inferior Parietal Lobule.Gray Matter.Brodmann area 7
+     16mm Right Cerebrum.Parietal Lobe.Inferior Parietal Lobule.Gray Matter.Brodmann area 39
+     16mm Right Cerebrum.Parietal Lobe.Precuneus.Gray Matter.Brodmann area 7
+     8mm Right Cerebrum.Parietal Lobe.Sub-Gyral.Gray Matter.Brodmann area 39
+     8mm Right Cerebrum.Parietal Lobe.Angular Gyrus.Gray Matter.Brodmann area 39
+
+
+Experiment Table:
+[ 3 0 1 7 1 10 0 0 2 0 1 0 2 1 2 4 0 1 1 0 0 1 2 2 0 2 1 3 0 0 0 4 2 0 3 0 2 4 0 0 7 0 1 1 0 0 0 3 9 3 1 0 4 2 3 0 1 1 1 2 0 4 1 0 0 0 0 1 1 0 0 1 6 5 1 1 4 2 1 2 3 0 0 0 2 0 0 1 1 4 0 4 0 0 0 3 0 2 1 0 0 0 0 10 0 1 2 0 6 11 0 0 1 1 2 2 0 2 2 0 1 0 0 0 1 0 0 2 3 0 3 0 3 1 2 0 1 1 5 2 0 0 3 2 2 2 0 0 0 0 1 0 1 4 0 1 3 10 0 1 0 4 0 0 2 0 0 1 0 0 0 0 1 2 1 0 2 5 12 0 1 1 0 0 2 2 1 1 6 2 1 0 1 2 1 2 0 1 0 0 1 0 0 0 0 1 1 0 0 0 2 0 0 1 0 2 1 0 2 2 0 0 0 0 1 2 2 0 0 0 0 3 0 0 0 2 0 6 4 4 1 3 0 0 5 0 0 0 0 2 2 0 7 2 5 2 2 2 1 2 0 1 1 2 0 3 0 9 2 7 1 4 0 3 0 0 2 5 0 0 0 0 1 0 0 2 0 0 0 0 1 7 0 1 0 2 1 3 1 3 4 2 0 0 3 1 2 0 1 0 1 1 0 0 0 3 0 0 0 0 0 4 0 1 0 1 0 7 1 0 3 2 8 1 0 0 0 1 0 1 3 2 3 2 0 2 0 0 0 1 0 4 5 0 3 1 0 0 2 1 0 0 1 2 0 2 0 0 0 3 1 2 9 1 0 0 2 0 0 2 5 2 0 0 0 1 0 2 3 2 0 3 1 1 0 0 0 0 5 1 0 0 0 1 0 4 0 0 3 0 0 0 3 ]
+[ 1 0 0 1 2 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 1 0 0 2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 2 0 0 0 0 4 0 0 0 1 0 0 0 0 0 1 0 0 0 0 2 4 0 0 1 3 0 1 2 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 2 0 2 1 0 0 1 0 0 1 2 1 1 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ]
+[ 0 0 0 0 0 3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 2 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+
+Contributors to cluster #1
+3 foci from //Anticevic; A.,2013 //WM 
+1 foci from //Kaladijan; A.,2007 //Inhibition 
+7 foci from //Kang; J.I.,2009 //Perception 
+1 foci from //Kerns; J.G.,2005 //Inhibition 
+10 foci from //Kiehl; K.A.,2005 //Memory 
+2 foci from //Kircher; T.J.,2005 //Social Cognition 
+1 foci from //Koch; K.,2011 //Memory 
+2 foci from //Koch; K.,2010 //Memory 
+1 foci from //Koch; K.,2008 //WM 
+2 foci from //Koeda; M.,2006 //Language 
+4 foci from //Kohler; C.G.,2008 //Social Cognition 
+1 foci from //Kubicki; M.,2003 //Language 
+1 foci from //Kumari; V.,2007 //Attention 
+1 foci from //Lakis; N.,2013 //Affective 
+2 foci from //Lakis; N.,2011 //Affective 
+2 foci from //Laurens; K.R.,2005 //Memory 
+2 foci from //Ledoux; A.A.,2013 //Problem Solving 
+1 foci from //Lee; J.S.,2014 //Affective 
+3 foci from //Lee; J;,2011 //Social Cognition 
+4 foci from //Lee; K.H.,2006 //Social Cognition 
+2 foci from //Leitman; D.I.,2011 //Affective 
+3 foci from //Lepage; M.,2011 //Affective 
+2 foci from //Lepage; M.,2006 //Episodic Memory 
+4 foci from //Leube; D.T.,2010 //Social Cognition 
+7 foci from //Liddle; P.F.,2006 //Memory 
+1 foci from //Lo Bianco; L.,2013 //Affective 
+1 foci from //Luck; D.,2010 //WM 
+3 foci from //McAllindon; D.P.,2010 //Reaction Time 
+9 foci from //Meisenzahl; E.M.,2006 //WM 
+3 foci from //Mendrek; A.,2012 //Affective 
+1 foci from //Michalopoulou; P.G.,2008 //Affective 
+4 foci from //Mier; D.,2014 //Affective 
+2 foci from //Minzenberg; M.J.,2012 //Attention 
+3 foci from //Morris; R.W.,2012 //Reward 
+1 foci from //Nagel; M.,2012 //Attention 
+1 foci from //Nagel; M.,2007 //Attention 
+1 foci from //Ngan; E.T.C.,2003 //Memory 
+2 foci from //Pae; C.U.,2008 //WM 
+4 foci from //Park; K.M.,2009 //Social Cognition 
+1 foci from //Payoux; P.,2004 //Motor 
+1 foci from //Pomarol-Clotet; E.,2008 //WM 
+1 foci from //Bertolino; A.,2009 //WM 
+1 foci from //Ragland; J.D.,2008 //Language 
+6 foci from //Ragland; J.D.,2004 //Episodic Memory 
+5 foci from //Rametti; G.,2009 //Episodic Memory 
+1 foci from //Rapp; A.M.,2013 //Language 
+1 foci from //Rasetti; R.,2009 //Affective 
+4 foci from //Rauch; A.V.,2010 //Affective 
+2 foci from //Reid; M.A.,2010 //Inhibtiion 
+1 foci from //Reiss; J.P.,2006 //Reaction Time 
+2 foci from //Romaniuk; L.,2010 //Affective 
+3 foci from //Rowland; L.M.,2010 //Rule Extraction 
+2 foci from //Sambataro; F. ,2013 //Inhibtiion 
+1 foci from //Satterthwaite; T.D.,2010 //Episodic Memory 
+1 foci from //Scheuerecker; J.,2009 //Motor 
+4 foci from //Scheuerecker; J.,2008 //Attention 
+4 foci from //Schlagenhauf; F.,2013 //Rule Extraction 
+3 foci from //Schlagenhauf; F.,2009 //Reward 
+2 foci from //Schlosser,2008 //WM 
+1 foci from //Schneider; F.,2007 //Perception 
+10 foci from //Sergerie; K.,2010 //Episodic Memory 
+1 foci from //Shergill; S.S.,2003 //Language 
+2 foci from //Shergill; S.S.,2000 //Language 
+6 foci from //Silverstein; S.M.,2010 //Perception 
+11 foci from //Silverstein; S.M.,2010 //Perception 
+1 foci from //Smee; C.,2011 //Language 
+1 foci from //Bonner-Jackson; A.,2005 //Memory 
+2 foci from //Straube; B.,2013 //Social Cognition 
+2 foci from //Sugraynes; G.,2012 //WM 
+2 foci from //Takahashi; H.,2010 //Social Cognition 
+2 foci from //Takahashi; H.,2004 //Affective 
+1 foci from //Taylor; S.F.,2007 //Affective 
+1 foci from //Ungar; L.,2010 //Inhibition 
+2 foci from //Volz; H.P.,2001 //Perception 
+3 foci from //Wadehra; S.,2013 //Episodic Memory 
+3 foci from //Wagner; G.,2013 //Inhibition 
+3 foci from //Walter; H.,2007 //WM 
+1 foci from //Waltz; J.A.,2009 //Reward 
+2 foci from //Weiss; A.P.,2009 //Episodic Memory 
+1 foci from //Whalley; H.C.,2009 //Episodic Memory 
+1 foci from //Williams; L.E.,2013 //Affective  
+5 foci from //Williams; L.M.,2007 //Affective  
+2 foci from //Williams; L.M.,2004 //Affective  
+3 foci from //Wolf; D.H.,2011 //Memory  
+2 foci from //Yoo; S.S.,2005 //WM 
+2 foci from //Yoon; J.H.,2013 //WM 
+2 foci from //Zedkova; L.,2006 //Reaction Time  
+1 foci from //Camchong; J.,2008 //Attention 
+1 foci from //Chen; P.J.,2013 //Language 
+4 foci from //Choi; J.S.,2012 //WM 
+1 foci from //Cieslik; E.C.,2013 //Inhibition 
+3 foci from //Cuervo-Lombard; C.,2012 //Episodic Memory 
+10 foci from //Davalos; D.B.,2011 TEMP 
+1 foci from //Arcuri; S.M.,2012 //Inhibition 
+4 foci from //Derntl; B.,2012 //Social Cognition 
+2 foci from //Di Giorgio; A.,2011 //Episodic Memory 
+1 foci from //Dowd; E.C.,2010 //Affective 
+1 foci from //Eich; T.S.,2013 //Episodic Memory 
+2 foci from //Eyler; L.T.,2008 //Verbal Learning 
+1 foci from //Eyler Zorrilla; L.T.,2003 //Episodic Memory 
+2 foci from //Foucher; J.R.,2011 //WM 
+5 foci from //Fox; M.D.,2005 //WM 
+12 foci from //Fu; CH,2005 //Language 
+1 foci from //Gizewski; E.R.,2013 //Social Cognition 
+1 foci from //Gradin; V.B.,2013 //Reward 
+2 foci from //Gur; R.E.,2007 //Memory 
+2 foci from //Gur; R.E.,2007 //Affective 
+1 foci from //Gur; R.E.,2002 //Affective 
+1 foci from //Habel; U. ,2010 //WM 
+6 foci from //Habel; U.,2010 //Affective 
+2 foci from //Avsar; K.B.,2011 //WM 
+1 foci from //Habel; U,2004 //Affective 
+1 foci from //Hall; J.,2008 //Affective 
+2 foci from //Hamilton; L.S.,2009 //WM 
+1 foci from //Harrison; B.J.,2007 //Inhibition 
+2 foci from //Hazlett; E.,2008 //Attention 
+1 foci from //Hofer; A.,2003 //Episodic Memory 
+1 foci from //Holt; D.J.,2012 //Affective 
+1 foci from //Hughes; M.E.,2012 //Inhibition 
+1 foci from //Hutcheson; N.L.,2012 //Episodic Memory 
+2 foci from //Jessen; F.,2003 //Episodic Memory 
+1 foci from //John; J.P.,2011 //Language 
+2 foci from //Juckel; G.,2006 //Reward 
+1 foci from //Juckel; G.,2006 //Reward 
+2 foci from //Frangou,2012 //Inhibition 
+2 foci from //Glahn,2010 //Episodic Memory 
+1 foci from //Kim,2009 //Social Cognition 
+2 foci from //Lagopoulos,2012 //Affective 
+2 foci from //Liu,2012 //Affective 
+3 foci from //Oertel-Knochel,2013 //Episodic Memory 
+2 foci from //Sagar,2013 //Affective 
+6 foci from //Strakowski,2011 //Attention 
+4 foci from //Townsend,2013 //Affective 
+4 foci from //Wang,2009 //Affective 
+1 foci from //Weathers,2013 //Inhibition 
+3 foci from //Liberg,2013 //Problem Solving 
+5 foci from //Foland,2008 //Affective 
+2 foci from //Kaladjian,2009 //Inhibition 
+2 foci from //Kaladjian,2009 //Inhibition 
+7 foci from //Malhi,2005 //Inhibition 
+2 foci from //Lagopolous,2007 //WM 
+5 foci from //Lawrence,2004 //Affective 
+2 foci from //Malhi,2007 //WM 
+2 foci from //Malhi,2007 //Affective 
+2 foci from //Mitchell,2004 //Affective 
+1 foci from //Monk,2004 //WM 
+2 foci from //Pompei,2011 //Inhibtion 
+1 foci from //Roth,2006 //Inhibtion 
+1 foci from //Strakowski,2005 //Inhibtion 
+2 foci from //Strakowski,2008 //Inhibtion 
+3 foci from //Favre,2013 //Inhibition 
+9 foci from //Townsend,2012 //Inhibtion 
+2 foci from //Vizueta,2012 //Affective 
+7 foci from //Foland-Ross,2012 //Affective 
+1 foci from //Elliott,2012 //Social Cognition 
+4 foci from //Erk,2010 //Affective 
+3 foci from //Gradin,2011 //Reward 
+2 foci from //Hall,2013 //Reward 
+5 foci from //Hall,2013 //Reward 
+1 foci from //Korgaonkar,2013 //Attention 
+2 foci from //McCabe,2009 //Reward 
+1 foci from //Osuch,2009 //Affective 
+7 foci from //Pizzagalli,2009 //Reward 
+1 foci from //Ritchey,2011 //Affective 
+2 foci from //Seidel,2012 //Social Cognition 
+1 foci from //Briceno,2013 //Affective 
+3 foci from //Smoski,2011 //Reward 
+1 foci from //Smoski,2013 //Affective 
+3 foci from //Stoy,2011 //Reward 
+4 foci from //Strigo,2010 //Reward 
+2 foci from //Strigo,2013 //Reward 
+3 foci from //Teresa,2010 //Affective 
+1 foci from //Townsend,2010 //Affective 
+2 foci from //Chechko,2013 //Inhibition 
+1 foci from //Whalley,2012 //Affective 
+1 foci from //Canli,2006 //Affective 
+1 foci from //Davidson,2003 //Affective 
+3 foci from //Epstein,2006 //Affective 
+4 foci from //Hooley,2009 //Affective 
+1 foci from //Derntl,2011 //Social Cognition 
+1 foci from //Kumari,2003 //Affective 
+7 foci from //Lawrence,2004 //Affective 
+1 foci from //Matthews,2008 //Inhibition 
+3 foci from //Dichter,2012 //Reward 
+2 foci from //Remijnse,2009 //Reward 
+8 foci from //Smoski,2009 //Reward 
+1 foci from //Surguladze,2005 //Affective 
+1 foci from //Werner,2009 //Episodic Memory 
+1 foci from //Becker,2013 //Reward 
+3 foci from //van den Heuvel,2005 //Problem Solving 
+2 foci from //Basile,2013 //Affective 
+3 foci from //Figee,2011 //Reward 
+2 foci from //Gu,2008 //Inhibition 
+2 foci from //Remijnse,2006 //Reward 
+1 foci from //Mataix-Cols,2004 //Affective 
+4 foci from //van den Heuvel,2011 //Problem Solving 
+5 foci from //Han,2011 //Inhibition 
+3 foci from //Agarwal,2013 //Affective 
+1 foci from //de Wit,2012 //Inhibition 
+2 foci from //Nakao,2009 //Inhibition 
+1 foci from //Page,2009 //Inhibition 
+1 foci from //Cooney,2006 //Affective 
+2 foci from //Etkin,2010 //Inhibition 
+2 foci from //Falconer,2008 //Inhibition 
+3 foci from //Goldin,2009 //Social Cognition 
+1 foci from //Kim,2008 //Affective 
+2 foci from //Lanius,2001 //Affective 
+9 foci from //Lanius,2003 //Affective 
+1 foci from //Lanius,2006 //Affective 
+2 foci from //Moores,2008 //WM 
+2 foci from //Palm,2011 //Affective 
+5 foci from //Pillay,2006 //Affective 
+2 foci from //Ball,2013 //Affective 
+1 foci from //Shin,2001 //Inhibition 
+2 foci from //Sripada,2009 //Social Cognition 
+3 foci from //Beutel,2010 //Inhibition 
+2 foci from //Werner,2009 //Episodic Memory 
+3 foci from //Demenescu,2011 //Affective 
+1 foci from //Boehme,2013 //Affective 
+1 foci from //Klumpp,2010 //Affective 
+5 foci from //Sailer,2008 //Reward 
+1 foci from //Zhang,2013 //WM 
+1 foci from //Elman,2009 //Reward 
+4 foci from //Hennig-Fast,2009 //Episodic Memory 
+3 foci from //New,2009 //Affective 
+3 foci from //van den Heuvel,2011 //Problem Solving 
+
+Contributors to cluster #2
+1 foci from //Anticevic; A.,2013 //WM 
+1 foci from //Kang; J.I.,2009 //Perception 
+2 foci from //Kerns; J.G.,2005 //Inhibition 
+1 foci from //Koch; K.,2011 //Memory 
+1 foci from //Koch; K.,2008 //WM 
+2 foci from //Leitman; D.I.,2011 //Affective 
+1 foci from //Lepage; M.,2006 //Episodic Memory 
+1 foci from //Liddle; P.F.,2006 //Memory 
+1 foci from //McAllindon; D.P.,2010 //Reaction Time 
+2 foci from //Pomarol-Clotet; E.,2010 //WM 
+1 foci from //Rametti; G.,2009 //Episodic Memory 
+1 foci from //Rubia; K.,2001 //Inhibition 
+1 foci from //Sapara; A.,2014 //WM 
+1 foci from //Schlosser,2008 //WM 
+1 foci from //Schultz; C.C.,2012 //WM 
+1 foci from //Smee; C.,2011 //Language 
+1 foci from //Sugraynes; G.,2012 //WM 
+1 foci from //Weiss; E.M.,2007 //Inhibition 
+1 foci from //Wolf; C.,2011 //Affective  
+1 foci from //Zierhut; K.,2010 //Epidosic Memory 
+1 foci from //Camchong; J.,2008 //Attention 
+2 foci from //Cuervo-Lombard; C.,2012 //Episodic Memory 
+3 foci from //Artiges; E.,2006 //Inhibition 
+1 foci from //Eack; S.M.,2013 //Social Cognition 
+2 foci from //Fox; M.D.,2005 //WM 
+6 foci from //Habel; U.,2010 //Affective 
+1 foci from //Hutcheson; N.L.,2012 //Episodic Memory 
+1 foci from //Lagopoulos,2012 //Affective 
+2 foci from //Wang,2009 //Affective 
+1 foci from //Curtis,2007 //Language 
+1 foci from //Foland,2008 //Affective 
+2 foci from //Malhi,2007 //WM 
+1 foci from //Monk,2004 //WM 
+1 foci from //Vizueta,2012 //Affective 
+2 foci from //Aust,2013 //Affective 
+1 foci from //Korgaonkar,2013 //Attention 
+2 foci from //McCabe,2009 //Reward 
+1 foci from //Pizzagalli,2009 //Reward 
+3 foci from //Strigo,2010 //Reward 
+1 foci from //Elliott,2002 //Inhibition 
+2 foci from //Fales,2009 //Affective 
+4 foci from //Hooley,2009 //Affective 
+1 foci from //Kumari,2003 //Affective 
+1 foci from //Remijnse,2009 //Reward 
+2 foci from //Walter,2007 //WM 
+4 foci from //Werner,2009 //Episodic Memory 
+1 foci from //van den Heuvel,2005 //Problem Solving 
+3 foci from //Basile,2013 //Affective 
+1 foci from //Gu,2008 //Inhibition 
+2 foci from //Koch,2012 //WM 
+1 foci from //Yucel,2007 //Inhibition 
+1 foci from //Han,2011 //Inhibition 
+1 foci from //Agarwal,2013 //Affective 
+1 foci from //Chechko,2009 //Inhibition 
+1 foci from //Goldin,2009 //Social Cognition 
+2 foci from //Kim,2008 //Affective 
+2 foci from //Lanius,2003 //Affective 
+1 foci from //Lanius,2006 //Affective 
+1 foci from //Moores,2008 //WM 
+1 foci from //Palm,2011 //Affective 
+2 foci from //Pillay,2006 //Affective 
+1 foci from //Ball,2013 //Affective 
+1 foci from //Prater,2013 //Affective 
+1 foci from //Pujol,2013 //Social Cognition 
+1 foci from //Shin,2001 //Inhibition 
+1 foci from //Werner,2009 //Episodic Memory 
+
+Contributors to cluster #3
+1 foci from //Kang; J.I.,2009 //Perception 
+1 foci from //Krabbendam; L.,2009 //Inhibition 
+1 foci from //Lee; K.H.,2006 //Social Cognition 
+1 foci from //Li; H.J.,2012 //Affective 
+1 foci from //Matsuo; K.,2013 //WM 
+1 foci from //Ragland; J.D.,2004 //Episodic Memory 
+1 foci from //Silverstein; S.M.,2010 //Perception 
+1 foci from //Waltz; J.A.,2009 //Reward 
+1 foci from //Davalos; D.B.,2011 TEMP 
+1 foci from //Arcuri; S.M.,2012 //Inhibition 
+1 foci from //Fox; M.D.,2005 //WM 
+1 foci from //Hamilton; L.S.,2009 //WM 
+1 foci from //Avsar; K.B.,2013 //Reward 
+1 foci from //Allin,2010 //Language 
+1 foci from //Lawrence,2004 //Affective 
+1 foci from //Frodl,NA //Affective 
+1 foci from //Strigo,2010 //Reward 
+1 foci from //Chechko,2013 //Inhibition 
+1 foci from //Grimm,2008 //Affective 
+1 foci from //Lawrence,2004 //Affective 
+1 foci from //Goldin,2009 //Social Cognition 
+1 foci from //Moores,2008 //WM 
+2 foci from //Ball,2013 //Affective 
+1 foci from //New,2009 //Affective 
+
+Contributors to cluster #4
+3 foci from //Kiehl; K.A.,2005 //Memory 
+1 foci from //Koch; K.,2008 //WM 
+1 foci from //Lakis; N.,2013 //Affective 
+1 foci from //Laurens; K.R.,2005 //Memory 
+1 foci from //Lepage; M.,2006 //Episodic Memory 
+1 foci from //Liddle; P.F.,2006 //Memory 
+1 foci from //Rametti; G.,2009 //Episodic Memory 
+1 foci from //Satterthwaite; T.D.,2010 //Episodic Memory 
+1 foci from //Taylor; S.F.,2011 //Social Cognition 
+2 foci from //van der Meer; L.,2013 //Social Cognition 
+1 foci from //Waltz; J.A.,2009 //Reward 
+1 foci from //Weiss; A.P.,2009 //Episodic Memory 
+1 foci from //de la Fuente-Sandoval; C.,2012 //Pain 
+1 foci from //de la Fuente-Sandoval,2010 //Pain 
+1 foci from //Fu; CH,2005 //Language 
+1 foci from //Holt; D.J.,2012 //Affective 
+1 foci from //Chen,2010 //Affective  
+1 foci from //Pizzagalli,2009 //Reward 
+1 foci from //Gu,2008 //Inhibition 
+1 foci from //Moores,2008 //WM 
+1 foci from //Ball,2013 //Affective 
+
+Contributors to cluster #5
+1 foci from //Liddle; P.F.,2006 //Memory 
+1 foci from //Eich; T.S.,2013 //Episodic Memory 
+1 foci from //Jamadar; S.,2013 //Language 
+2 foci from //Frangou,2012 //Inhibition 
+1 foci from //Jamadar,2013 //Language 
+2 foci from //Pompei,2011 //Inhibtion 
+1 foci from //Chechko,2013 //Inhibition 
+1 foci from //Fu,2008 //Affective 
+1 foci from //Falconer,2008 //Inhibition 

@@ -1,0 +1,152 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_BDany_allfile_TAL.txt
+Number of foci                = 704
+Number of experiments         = 73
+Total number of subjects      = 3535
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = BDuc_all_ALE.nii
+FWHM minimum value            = 8.483854099200526
+FWHM median value             = 8.881953893794925
+FWHM maximum value            = 10.002568195473065
+Minimum ALE score             = 9.54679E-23
+Maximum ALE score             = 0.04619899
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = BDuc_all_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 21)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 8704 mm^3
+Chosen min. cluster size      = 616 mm^3
+Thresholded ALE image         = BDuc_all_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 4752 mm^3 from (8,-8,-20) to (34,12,8) centered at (22.61,2.69,-4.7)
+   Extrema: (Labels are within +/-5mm)
+     0.04619899 at (22,4,-2)	Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.04080013 at (24,0,-10)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     0.022088397 at (10,10,-2)	Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+   Labels: (Nearest gray within +/-5mm)
+     2744mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     808mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     392mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     280mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     144mm Right Cerebrum.Sub-lobar.Claustrum.Gray Matter.*
+     128mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     96mm Right Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     40mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 34
+     32mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 28
+     24mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     24mm Right Cerebrum.Temporal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 13
+     16mm Right Cerebrum.Limbic Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     16mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Medial Globus Pallidus
+     8mm Right Cerebrum.Sub-lobar.*.Gray Matter.Amygdala
+
+ #2: 1752 mm^3 from (-34,-12,-26) to (-20,4,-6) centered at (-26.34,-3.01,-17.48)
+   Extrema: (Labels are within +/-5mm)
+     0.03879471 at (-24,0,-22)	Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     0.023186745 at (-28,-10,-8)	Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+   Labels: (Nearest gray within +/-5mm)
+     768mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     336mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     208mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 28
+     160mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     136mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     96mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Hippocampus
+     24mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 34
+     24mm Left Cerebrum.Sub-lobar.Claustrum.Gray Matter.*
+
+ #3: 1432 mm^3 from (24,22,-12) to (42,40,0) centered at (33.64,30.67,-5.75)
+   Extrema: (Labels are within +/-5mm)
+     0.03281512 at (34,28,-8)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     0.031477906 at (34,34,-4)	Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+   Labels: (Nearest gray within +/-5mm)
+     1072mm Right Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     320mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 47
+     16mm Right Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 11
+     16mm No Gray Matter found
+     8mm Right Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 47
+
+ #4: 768 mm^3 from (-36,24,-8) to (-26,42,0) centered at (-31.66,35.29,-3.55)
+   Extrema: (Labels are within +/-5mm)
+     0.030571591 at (-30,38,-2)	Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 11
+     0.020620748 at (-34,24,-2)	Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+   Labels: (Nearest gray within +/-5mm)
+     264mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 47
+     256mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     128mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 11
+     104mm No Gray Matter found
+     8mm Left Cerebrum.Sub-lobar.Extra-Nuclear.Gray Matter.Brodmann area 47
+     8mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.*
+
+
+Experiment Table:
+[ 0 0 1 2 0 0 0 0 1 0 0 0 2 2 0 0 0 0 0 0 2 0 0 0 1 0 2 0 2 0 0 0 0 0 0 2 1 0 0 0 0 0 0 1 0 0 0 0 1 1 0 2 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 2 2 0 0 2 ]
+[ 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 3 0 0 1 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 3 ]
+[ 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 ]
+
+Contributors to cluster #1
+1 foci from //Glahn,2010 //Episodic Memory 
+2 foci from //Hummer,2013 //Inhibition 
+1 foci from //Keener,2012 //Affective 
+2 foci from //Linke,2012 //Reward 
+2 foci from //Liu,2012 //Affective 
+2 foci from //Perlman,2012 //Affective 
+1 foci from //Sagar,2013 //Affective 
+2 foci from //Strakowski,2011 //Attention 
+2 foci from //Wang,2009 //Affective 
+2 foci from //Bertocci,2012 //WM 
+1 foci from //Chen,2006 //Affective 
+1 foci from //Gruber,2010 //WM 
+1 foci from //Kaladjian,2009 //Inhibition 
+1 foci from //Kaladjian,2009 //Inhibition 
+2 foci from //Malhi,2005 //Inhibition 
+1 foci from //Costafreda,2011 //Language 
+1 foci from //Malhi,2007 //Affective 
+1 foci from //Mitchell,2004 //Affective 
+2 foci from //Townsend,2012 //Inhibtion 
+2 foci from //Vizueta,2012 //Affective 
+2 foci from //Foland-Ross,2012 //Affective 
+
+Contributors to cluster #2
+1 foci from //Hummer,2013 //Inhibition 
+1 foci from //Keener,2012 //Affective 
+1 foci from //Bermpohl,2009 //Affective  
+3 foci from //Perlman,2012 //Affective 
+1 foci from //Radaelli,2012 //Affective 
+2 foci from //Sagar,2013 //Affective 
+2 foci from //Wang,2009 //Affective 
+1 foci from //Foland,2008 //Affective 
+1 foci from //Kaladjian,2009 //Inhibition 
+2 foci from //Malhi,2005 //Inhibition 
+1 foci from //Mitchell,2004 //Affective 
+
+Contributors to cluster #3
+1 foci from //Frangou,2012 //Inhibition 
+1 foci from //Linke,2012 //Reward 
+1 foci from //Morris,2012 //Affective 
+1 foci from //Townsend,2013 //Affective 
+1 foci from //Liberg,2013 //Problem Solving 
+3 foci from //Foland,2008 //Affective 
+1 foci from //Pompei,2011 //Inhibtion 
+1 foci from //Strakowski,2004 //Attention 
+3 foci from //Foland-Ross,2012 //Affective 
+
+Contributors to cluster #4
+1 foci from //Hummer,2013 //Inhibition 
+1 foci from //Bermpohl,2010 //Reward  
+1 foci from //Kronhaus,2006 //Inhibition 
+1 foci from //Townsend,2012 //Inhibtion 
+1 foci from //Vizueta,2012 //Affective 

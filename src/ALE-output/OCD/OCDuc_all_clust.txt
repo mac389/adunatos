@@ -1,0 +1,91 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_OCD_allfile_TAL.txt
+Number of foci                = 418
+Number of experiments         = 41
+Total number of subjects      = 1740
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = OCDuc_all_ALE.nii
+FWHM minimum value            = 8.529755616113304
+FWHM median value             = 8.857805542544007
+FWHM maximum value            = 9.501798304955097
+Minimum ALE score             = 1.5748007E-21
+Maximum ALE score             = 0.029732872
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = OCDuc_all_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 27)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 2888 mm^3
+Chosen min. cluster size      = 624 mm^3
+Thresholded ALE image         = OCDuc_all_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 1368 mm^3 from (-16,6,-6) to (-2,18,10) centered at (-9.93,12.46,2.94)
+   Extrema: (Labels are within +/-5mm)
+     0.029732872 at (-10,12,4)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     0.01992222 at (-4,8,-4)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+   Labels: (Nearest gray within +/-5mm)
+     864mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     432mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     32mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 25
+     32mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     8mm Left Cerebrum.Sub-lobar.*.Gray Matter.*
+
+ #2: 896 mm^3 from (4,12,-2) to (16,24,10) centered at (11.16,17.97,3.77)
+   Extrema: (Labels are within +/-5mm)
+     0.029242422 at (12,18,4)	Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+   Labels: (Nearest gray within +/-5mm)
+     592mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     304mm Right Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+
+ #3: 624 mm^3 from (-10,24,26) to (0,32,34) centered at (-5.74,27.89,29.24)
+   Extrema: (Labels are within +/-5mm)
+     0.025516605 at (-6,28,30)	Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 9
+   Labels: (Nearest gray within +/-5mm)
+     368mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     176mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 9
+     40mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+     16mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     16mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 9
+     8mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 6
+
+
+Experiment Table:
+[ 0 0 0 2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1 ]
+[ 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 ]
+
+Contributors to cluster #1
+2 foci from //Figee,2011 //Reward 
+1 foci from //Weygandt,2012 //Affective 
+2 foci from //van den Heuvel,2011 //Problem Solving 
+1 foci from //Jung,2011 //Reward 
+2 foci from //Baioui,2013 //Affective 
+1 foci from //Page,2009 //Inhibition 
+1 foci from //Roth,2007 //Inhibition 
+
+Contributors to cluster #2
+1 foci from //van den Heuvel,2005 //Problem Solving 
+1 foci from //Figee,2011 //Reward 
+1 foci from //Remijnse,2006 //Reward 
+1 foci from //Mataix-Cols,2004 //Affective 
+1 foci from //Simon,2010 //Affective 
+2 foci from //Baioui,2013 //Affective 
+
+Contributors to cluster #3
+1 foci from //Gu,2008 //Inhibition 
+1 foci from //Han,2011 //Inhibition 
+1 foci from //Agarwal,2013 //Affective 
+1 foci from //Nakao,2005 //Inhibition 

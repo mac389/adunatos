@@ -1,0 +1,52 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_OCD_downfile_TAL.txt
+Number of foci                = 161
+Number of experiments         = 21
+Total number of subjects      = 816
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = cont_greater_pat_OCDuc_ALE.nii
+FWHM minimum value            = 8.63170824677489
+FWHM median value             = 8.857805542544007
+FWHM maximum value            = 9.501798304955097
+Minimum ALE score             = 1.7444298E-26
+Maximum ALE score             = 0.018167512
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = cont_greater_pat_OCDuc_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 40)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 680 mm^3
+Chosen min. cluster size      = 640 mm^3
+Thresholded ALE image         = cont_greater_pat_OCDuc_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 680 mm^3 from (-14,4,2) to (-6,18,16) centered at (-9.35,12.57,6.58)
+   Extrema: (Labels are within +/-5mm)
+     0.017845467 at (-10,10,6)	Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+   Labels: (Nearest gray within +/-5mm)
+     440mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Body
+     224mm Left Cerebrum.Sub-lobar.Caudate.Gray Matter.Caudate Head
+     8mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     8mm Left Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+
+
+Experiment Table:
+[ 0 0 0 2 0 0 0 0 0 0 0 0 2 0 0 0 0 1 0 1 0 ]
+
+Contributors to cluster #1
+2 foci from //Figee,2011 //Reward 
+2 foci from //van den Heuvel,2011 //Problem Solving 
+1 foci from //Murayama,2013 //Affective 
+1 foci from //Nakao,2009 //Inhibition 

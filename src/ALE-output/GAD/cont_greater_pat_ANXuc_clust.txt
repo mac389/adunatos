@@ -1,0 +1,111 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_ANX_downfile_TAL.txt
+Number of foci                = 499
+Number of experiments         = 53
+Total number of subjects      = 1880
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = cont_greater_pat_ANXuc_ALE.nii
+FWHM minimum value            = 8.558865707340106
+FWHM median value             = 8.939044780271026
+FWHM maximum value            = 10.002568195473065
+Minimum ALE score             = 1.5755802E-30
+Maximum ALE score             = 0.026092676
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = cont_greater_pat_ANXuc_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 15)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 2824 mm^3
+Chosen min. cluster size      = 480 mm^3
+Thresholded ALE image         = cont_greater_pat_ANXuc_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 1144 mm^3 from (-4,12,20) to (10,28,32) centered at (2.53,19.6,25.55)
+   Extrema: (Labels are within +/-5mm)
+     0.026092676 at (4,16,28)	Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 24
+     0.025615903 at (0,24,24)	Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+   Labels: (Nearest gray within +/-5mm)
+     288mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 24
+     256mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     232mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     176mm Right Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     120mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 32
+     40mm Left Cerebrum.Limbic Lobe.Cingulate Gyrus.Gray Matter.Brodmann area 24
+     16mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 33
+     8mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 33
+     8mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+
+ #2: 1056 mm^3 from (-14,28,-12) to (2,42,6) centered at (-7.49,33.46,-.59)
+   Extrema: (Labels are within +/-5mm)
+     0.025701433 at (-10,32,2)	Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     0.020218331 at (0,34,-10)	Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+   Labels: (Nearest gray within +/-5mm)
+     344mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+     264mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.*
+     240mm Left Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+     96mm No Gray Matter found
+     32mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 32
+     24mm Right Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 11
+     24mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 10
+     16mm Left Cerebrum.Frontal Lobe.Medial Frontal Gyrus.Gray Matter.Brodmann area 11
+     16mm Right Cerebrum.Limbic Lobe.Anterior Cingulate.Gray Matter.Brodmann area 24
+
+ #3: 624 mm^3 from (-42,24,-6) to (-32,40,2) centered at (-35.95,30.98,-1.41)
+   Extrema: (Labels are within +/-5mm)
+     0.024691794 at (-34,28,-2)	Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     0.019290617 at (-40,36,0)	No Gray Matter found
+   Labels: (Nearest gray within +/-5mm)
+     480mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     48mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 46
+     32mm Left Cerebrum.Frontal Lobe.Middle Frontal Gyrus.Gray Matter.Brodmann area 47
+     24mm No Gray Matter found
+     24mm Left Cerebrum.Frontal Lobe.Sub-Gyral.Gray Matter.Brodmann area 10
+     8mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 13
+     8mm Left Cerebrum.Sub-lobar.Insula.Gray Matter.Brodmann area 47
+
+
+Experiment Table:
+[ 0 1 0 0 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 0 0 1 0 0 0 0 0 0 1 4 2 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 ]
+[ 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 ]
+
+Contributors to cluster #1
+1 foci from //Chechko,2009 //Inhibition 
+1 foci from //Goldin,2009 //Social Cognition 
+1 foci from //Lanius,2003 //Affective 
+1 foci from //Lanius,2006 //Affective 
+1 foci from //Moores,2008 //WM 
+1 foci from //Prater,2013 //Affective 
+1 foci from //Shin,2001 //Inhibition 
+1 foci from //Werner,2009 //Episodic Memory 
+1 foci from //Williams,2006 //Affective 
+
+Contributors to cluster #2
+1 foci from //Etkin,2010 //Inhibition 
+1 foci from //Kim,2008 //Affective 
+4 foci from //Lanius,2001 //Affective 
+2 foci from //Lanius,2003 //Affective 
+1 foci from //Palm,2011 //Affective 
+1 foci from //Prater,2013 //Affective 
+1 foci from //Shin,2005 //Affective 
+1 foci from //Bryant,2005 //Memory 
+1 foci from //Rougement-Bucking,2011 //Affective 
+
+Contributors to cluster #3
+1 foci from //Goldin,2009 //Social Cognition 
+1 foci from //Lanius,2003 //Affective 
+1 foci from //Beutel,2010 //Inhibition 
+1 foci from //Aupperle,2012 //Reward 
+1 foci from //New,2009 //Affective 

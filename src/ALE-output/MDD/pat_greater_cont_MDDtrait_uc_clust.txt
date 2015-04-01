@@ -1,0 +1,77 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_MDDtrait_upfile_TAL.txt
+Number of foci                = 452
+Number of experiments         = 64
+Total number of subjects      = 2331
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = pat_greater_cont_MDDtrait_uc_ALE.nii
+FWHM minimum value            = 8.56012686463911
+FWHM median value             = 8.939044780271026
+FWHM maximum value            = 9.755397007122182
+Minimum ALE score             = 1.4493667E-24
+Maximum ALE score             = 0.026675101
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = pat_greater_cont_MDDtrait_uc_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 16)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 1920 mm^3
+Chosen min. cluster size      = 520 mm^3
+Thresholded ALE image         = pat_greater_cont_MDDtrait_uc_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 1280 mm^3 from (16,-8,-20) to (30,6,-6) centered at (23.57,-2.07,-13.2)
+   Extrema: (Labels are within +/-5mm)
+     0.026675101 at (26,-2,-14)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+   Labels: (Nearest gray within +/-5mm)
+     760mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     224mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     80mm Right Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     72mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     40mm Right Cerebrum.Sub-lobar.*.Gray Matter.Amygdala
+     32mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     32mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 28
+     24mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     16mm Right Cerebrum.Limbic Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+
+ #2: 640 mm^3 from (-30,-6,-24) to (-22,4,-14) centered at (-25.91,-1.07,-18.26)
+   Extrema: (Labels are within +/-5mm)
+     0.025604663 at (-26,0,-18)	Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+   Labels: (Nearest gray within +/-5mm)
+     312mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     176mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     104mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     48mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 28
+
+
+Experiment Table:
+[ 1 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 ]
+
+Contributors to cluster #1
+1 foci from //Arnone,2012 //Affective 
+2 foci from //Greening,2013 //Affective 
+1 foci from //Rosenblau,2012 //Affective 
+2 foci from //Suslow,2010 //Affective 
+1 foci from //Teresa,2010 //Affective 
+1 foci from //Beauregard,2006 //Affective 
+1 foci from //Cooney,2010 //Social Cognition 
+
+Contributors to cluster #2
+1 foci from //Arnone,2012 //Affective 
+2 foci from //Teresa,2010 //Affective 
+1 foci from //Victor,2012 //Affective 
+1 foci from //Lee,2013 //Attention 
+1 foci from //Surguladze,2005 //Affective 

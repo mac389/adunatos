@@ -1,0 +1,84 @@
+Mask:
+Dimensions                    = 80x96x70
+Number of within-brain voxels = 198111
+Mask Size                     = More Conservative (Smaller)
+
+Foci:
+Coordinate System             = Talairach
+File of foci coordinates      = ALE_BDany_upfile_TAL.txt
+Number of foci                = 279
+Number of experiments         = 49
+Total number of subjects      = 2091
+
+ALE - Random Effects, Turkeltaub Non-Additive (HBM, 2012):
+File of ALE voxels            = pat_greater_cont_BDuc_ALE.nii
+FWHM minimum value            = 8.550602563884397
+FWHM median value             = 8.908865767289859
+FWHM maximum value            = 10.002568195473065
+Minimum ALE score             = 4.4290754E-38
+Maximum ALE score             = 0.030453645
+
+P Values: Eickhoff (HBM, 2009)
+File of P values              = pat_greater_cont_BDuc_P.nii
+
+Thresholding:
+Threshold Method              = Cluster-level Inference
+Thresholding Value            = 0.01
+Thresholding Permutations     = 1000 (equilibrium found after 11)
+Cluster-Forming Method        = Uncorrected P value
+Cluster-Forming Value         = 0.001
+Volume > Threshold            = 2520 mm^3
+Chosen min. cluster size      = 408 mm^3
+Thresholded ALE image         = pat_greater_cont_BDuc_ALE_C01_1k.nii
+
+Cluster Analysis:
+ #1: 1416 mm^3 from (16,-8,-22) to (30,10,2) centered at (22.34,.86,-7.77)
+   Extrema: (Labels are within +/-5mm)
+     0.019005569 at (22,2,0)	Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.01760416 at (22,2,-8)	Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     0.01725094 at (20,0,-18)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     0.016401613 at (28,-4,-10)	Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+   Labels: (Nearest gray within +/-5mm)
+     704mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Putamen
+     328mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     152mm Right Cerebrum.Sub-lobar.Lentiform Nucleus.Gray Matter.Lateral Globus Pallidus
+     128mm Right Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     40mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 34
+     32mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     16mm Right Cerebrum.Frontal Lobe.Subcallosal Gyrus.Gray Matter.Brodmann area 34
+     8mm Right Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 28
+     8mm Right Cerebrum.Sub-lobar.*.Gray Matter.Amygdala
+
+ #2: 1104 mm^3 from (-30,-10,-24) to (-20,10,-14) centered at (-24.34,-.56,-19.75)
+   Extrema: (Labels are within +/-5mm)
+     0.030453645 at (-24,0,-20)	Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+   Labels: (Nearest gray within +/-5mm)
+     352mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Amygdala
+     304mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Amygdala
+     224mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 28
+     120mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Brodmann area 34
+     40mm Left Cerebrum.Limbic Lobe.Uncus.Gray Matter.Brodmann area 34
+     40mm Left Cerebrum.Frontal Lobe.Inferior Frontal Gyrus.Gray Matter.Brodmann area 47
+     24mm Left Cerebrum.Limbic Lobe.Parahippocampal Gyrus.Gray Matter.Hippocampus
+
+
+Experiment Table:
+[ 0 0 0 0 0 1 0 0 0 2 0 0 0 2 0 0 0 1 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[ 0 0 0 0 0 1 0 0 1 0 0 0 0 3 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 ]
+
+Contributors to cluster #1
+1 foci from //Keener,2012 //Affective 
+2 foci from //Linke,2012 //Reward 
+2 foci from //Perlman,2012 //Affective 
+1 foci from //Sagar,2013 //Affective 
+2 foci from //Bertocci,2012 //WM 
+1 foci from //Chen,2006 //Affective 
+1 foci from //Gruber,2010 //WM 
+
+Contributors to cluster #2
+1 foci from //Keener,2012 //Affective 
+1 foci from //Bermpohl,2009 //Affective  
+3 foci from //Perlman,2012 //Affective 
+1 foci from //Radaelli,2012 //Affective 
+1 foci from //Sagar,2013 //Affective 
+1 foci from //Lawrence,2004 //Affective 
