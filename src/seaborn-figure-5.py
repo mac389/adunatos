@@ -1,6 +1,6 @@
 import matplotlib, operator
 matplotlib.use('Agg')
-import string, json, brewer2mpl, mygene
+import string, json, brewer2mpl, mygene, os
 
 import utils as tech
 import seaborn as sns
@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.gridspec as gridspec
 
+from optparse import OptionParser
 from awesome_print import ap 
 from collections import Counter, OrderedDict
 
@@ -17,15 +18,19 @@ df = pd.read_json('../docs/gene-expression-by-area2.json').dropna(axis=1)
 genes_functions = json.load(open('../docs/gene-function.json','rb'))
 cutoff = 3
 
-#Direct input and output
+parser = OptionParser()
+parser.add_option("-i", "--input", dest="inputname")
+parser.add_option("-c","--cut",dest="cut", type="int",default=-1)
 
+(options, args) = parser.parse_args()
+#Direct input and output
+outputname,_ = os.path.splitext(options.inputname)
+outputname += '.png'
+ap(outputname)
 #areas = tech.allChildrenOfParent('hippocampal formation',flattened_structural_ontology)
-areas =open('tmp').read().splitlines()
-ap(open('tmp').read().splitlines())
-areas = [area for area in open('tmp').read().splitlines() if area in df.columns.values]
-#ap(df.columns.values)
-ap(areas)
-data = df[areas]
+areas = [area for area in open(options.inputname).read().splitlines() if area in df.columns.values]
+#Why do some areas have no gene expression?
+data = df[areas] if options.cut == -1 else df[areas].tail(int(options.cut))
 
 #Create color palette for structures
 regions = tech.array_from_lists([tech.ancestors(val,flattened_structural_ontology) for val in df.columns.values])
@@ -67,4 +72,4 @@ for label in structure_frequencies.keys()[:10]:
                             label=tech.format(label), linewidth=0)
 legend_struct = cg.ax_row_dendrogram.get_position()
 cg.ax_row_dendrogram.legend(ncol=1,loc=(legend_for.x0+2.5, legend_for.y0+0.65))
-cg.savefig('SZ_hypo_test.png')
+cg.savefig(outputname)

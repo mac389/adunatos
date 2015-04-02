@@ -20,6 +20,35 @@ filenames = open('filelist').read().splitlines()
 
 cutoff = 1000
 
+ontology = list(set(list(itertools.chain.from_iterable(line.split('_') for line in ontology))))
+ontology = [path.strip() for path in ontology]
+
+def convert(name,ontology):
+	if name in ontology:
+		return name
+	elif 'brodmann' in name:
+		name = broadman[name.replace('brodmann','').strip().capitalize()]
+		if type(name) == str or type(name) == unicode:
+			if name in ontology:
+				print>>outfile,name
+			else:
+				raise ValueError('%s not in ontology, str'%name)
+		if type(name) == list:
+			for subfield in name:
+				if subfield in ontology:
+					return subfield
+				else:
+					raise ValueError('%s not in ontology, iterating through Brodmann list'%subfield)
+	else:
+		if 'geniculum' in name:
+			name = name.replace('geniculum','geniculate')
+		if name.strip() == 'hippocampus':
+			name = 'hippocampal formation'
+			if name in ontology:
+				print>>outfile,name
+			else:
+				raise ValueError('%s not in ontology, str replacement'%name)
+
 for filename in filenames:
 	outputname,_ = os.path.splitext(filename)
 	condition = os.path.basename(outputname)
@@ -48,13 +77,20 @@ for filename in filenames:
 				
 				names = list(set([re.sub(r"(?<!area)\s{1}\d+","",re.sub(r"\d+mm"," ",name)).strip().lower() for name in names]))
 				for idx,name in enumerate(names):
-					if 'brodmann' in name:
-						name = broadman[name.replace('brodmann','').strip().capitalize()]
-					if type(name) == str or type(name) == unicode:
+					if name in ontology:
 						print>>outfile,name
-					if type(name) == list:
+					elif type(name) == list:
 						for subfield in name:
-							print>>outfile,subfield
+							try:
+								print>>outfile,convert(subfield,ontology)
+							except ValueError as e:
+								print e 
+					elif type(name) == unicode or type(name) == str:
+						try:
+							print>>outfile,convert(name,ontology)
+						except ValueError as e:
+							print e
+
 	#Python equivalent of uniq from bash
 	structures = set(open(outputname).read().splitlines())
 	with open(outputname,'wb') as outfile:
